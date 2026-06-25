@@ -14,6 +14,7 @@ I100135526,I4210165038,BGI Group (China),University of Chinese Academy of Scienc
 I100135526,I200769079,BGI Group (China),Hong Kong University of Science and Technology,company,education,Other,Other,1.0
 I100296615,I112991645,École Nationale de l’Aviation Civile,Airbus (France),education,company,Other,Other,1.0
 I10052268,I4210164862,New Mexico State University,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
+I10052268,RAW_XAI,New Mexico State University,xAI,education,company,Other,xAI,1.0
 I100532134,I118019719,Université Claude Bernard Lyon 1,Roche (Switzerland),education,company,Other,Other,1.0
 I100532134,I4210113058,Université Claude Bernard Lyon 1,Roche (United Kingdom),education,company,Other,Other,1.0
 I100532134,I4210090411,Université Claude Bernard Lyon 1,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
@@ -51,6 +52,7 @@ I102322142,I4210090411,"Rutgers, The State University of New Jersey",Google Deep
 I102322142,I4210113297,"Rutgers, The State University of New Jersey",Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,2.0
 I102322142,I4210161460,"Rutgers, The State University of New Jersey",OpenAI (United States),education,company,Other,OpenAI,1.0
 I102322142,I4210106675,"Rutgers, The State University of New Jersey",Invenio Imaging (United States),education,company,Other,Other,1.0
+I102322142,RAW_META,"Rutgers, The State University of New Jersey",Meta AI,education,company,Other,Meta,1.0
 I102322142,I4210123151,"Rutgers, The State University of New Jersey",Rütgers (Germany),education,company,Other,Other,1.0
 I102322142,I4210159835,"Rutgers, The State University of New Jersey",Perceptive Engineering (United Kingdom),education,company,Other,Other,1.0
 I102322142,I4210155268,"Rutgers, The State University of New Jersey",Salesforce (United States),education,company,Other,Other,1.0
@@ -124,6 +126,8 @@ I108192572,I4210164862,HEC Montréal,Artificial Intelligence in Medicine (Canada
 I108192572,I4210161460,HEC Montréal,OpenAI (United States),education,company,Other,OpenAI,1.0
 I108290504,I4210107374,University of Pisa,OHB (Italy),education,company,Other,Other,1.0
 I108290504,I4210166206,University of Pisa,Medical Technologies (Czechia),education,company,Other,Other,1.0
+I108403487,RAW_XAI,Warsaw University of Technology,xAI,education,company,Other,xAI,1.0
+I108403487,RAW_MICROSOFT,Warsaw University of Technology,Microsoft Research,education,company,Other,Microsoft,1.0
 I108688024,I2250653659,Qingdao University,Tencent (China),education,company,Other,Other,1.0
 I108688024,I4210158968,Qingdao University,C & L Instruments (United States),education,company,Other,Other,1.0
 I108688024,I4210108778,Qingdao University,Fresenius (Germany),education,company,Other,Other,1.0
@@ -134,6 +138,7 @@ I109556086,I76130692,Autoliv (Sweden),Zhejiang University,company,education,Othe
 I109689652,I97750245,FPT University,Software (Spain),education,company,Other,Other,1.0
 I109935558,I4210119975,Ningbo University,Beijing Institute of Power Machinery (China),education,company,Other,Other,1.0
 I110002522,I4387154989,University of Essex,Hugging Face,education,company,Other,Hugging Face,1.0
+I110002522,RAW_HUGGING_FACE,University of Essex,Hugging Face,education,company,Other,Hugging Face,1.0
 I110092051,I165638839,Brigham Young University–Hawaii,Huntsman (United States),education,company,Other,Other,1.0
 I11019714,I4210140114,Universidade da Coruña,Scripps (United States),education,company,Other,Other,1.0
 I110507236,I111979921,Gates (United States),Northwestern University,company,education,Other,Other,1.0
@@ -146,6 +151,8 @@ I111088046,I4210100977,Boston University,IBM (Ireland),education,company,Other,O
 I111149068,I4210103986,National Defense University,Jingdong (China),education,company,Other,Other,1.0
 I111149068,I4210110242,National Defense University,Digital Science (United States),education,company,Other,Other,1.0
 I111236770,I4210159412,University of Vermont,Intelligent Machines (Sweden),education,company,Other,Other,1.0
+I111262870,RAW_NVIDIA,Universitat de Miguel Hernández d'Elx,NVIDIA,education,company,Other,NVIDIA,1.0
+I111398093,RAW_MICROSOFT,Kozminski University,Microsoft Research,education,company,Other,Microsoft,1.0
 I111483173,I4210163239,King University,Helix (United States),education,company,Other,Other,1.0
 I111483173,I1306409833,King University,Adobe Systems (United States),education,company,Other,Other,1.0
 I111483173,I4210095624,King University,Alibaba Group (United States),education,company,Other,Other,1.0
@@ -253,10 +260,12 @@ I1174212,I4210114634,University of Southern California,Global Phasing (United Ki
 I1174212,I4210119461,University of Southern California,Convergent Science (United States),education,company,Other,Other,1.0
 I1174212,I4210087747,University of Southern California,Creative Technologies (United States),education,company,Other,Other,3.0
 I1174212,I1291425158,University of Southern California,Google (United States),education,company,Other,Google / Google DeepMind / DeepMind,5.0
+I1174212,RAW_NVIDIA,University of Southern California,NVIDIA,education,company,Other,NVIDIA,2.0
 I1174212,I4210127875,University of Southern California,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I1174212,I4210116219,University of Southern California,Engineering Systems (United States),education,company,Other,Other,1.0
 I1174212,I4210161460,University of Southern California,OpenAI (United States),education,company,Other,OpenAI,1.0
 I1174212,I45928872,University of Southern California,Alibaba Group (China),education,company,Other,Other,1.0
+I1174212,RAW_META,University of Southern California,Meta AI,education,company,Other,Meta,1.0
 I1174212,I4210116895,University of Southern California,Art Innovation (Netherlands),education,company,Other,Other,1.0
 I1174212,I4210164862,University of Southern California,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
 I1174212,I4210090411,University of Southern California,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,2.0
@@ -344,6 +353,7 @@ I121980950,I72090969,Utah State University,Nokia (United States),education,compa
 I122140584,I4210104133,Universidade Federal do Rio de Janeiro,Nanomed (Brazil),education,company,Other,Other,1.0
 I122140584,I4210146682,Universidade Federal do Rio de Janeiro,Intel (India),education,company,Other,Other,1.0
 I122140584,I923382979,Universidade Federal do Rio de Janeiro,ExxonMobil (United States),education,company,Other,Other,1.0
+I122346577,RAW_NVIDIA,University of Modena and Reggio Emilia,NVIDIA,education,company,Other,NVIDIA,1.0
 I122346577,I169724904,University of Modena and Reggio Emilia,Zimmer Biomet (Netherlands),education,company,Other,Other,1.0
 I122346577,I1291425158,University of Modena and Reggio Emilia,Google (United States),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I122411786,I1291425158,California Institute of Technology,Google (United States),education,company,Other,Google / Google DeepMind / DeepMind,2.0
@@ -378,17 +388,21 @@ I123900574,I2250650973,Pohang University of Science and Technology,Samsung (Sout
 I123900574,I1306409833,Pohang University of Science and Technology,Adobe Systems (United States),education,company,Other,Other,2.0
 I12393601,I1342911587,Huaihua University,Oracle (United States),education,company,Other,Other,1.0
 I123946342,I1292974536,Binghamton University,Ford Motor Company (United States),education,company,Other,Other,1.0
+I123946342,RAW_META,Binghamton University,Meta AI,education,company,Other,Meta,2.0
 I123946342,I4210147129,Binghamton University,BrainAid (United States),education,company,Other,Other,1.0
+I123946342,RAW_XAI,Binghamton University,xAI,education,company,Other,xAI,1.0
 I124055696,I1291425158,University of Copenhagen,Google (United States),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I124055696,I1311688040,University of Copenhagen,Amazon (United States),education,company,Other,Amazon,1.0
 I124055696,I180857899,University of Copenhagen,Pfizer (United States),education,company,Other,Other,1.0
 I124055696,I4387154989,University of Copenhagen,Hugging Face,education,company,Other,Hugging Face,1.0
+I124055696,RAW_HUGGING_FACE,University of Copenhagen,Hugging Face,education,company,Other,Hugging Face,1.0
 I124055696,I4210108625,University of Copenhagen,Microsoft (United Kingdom),education,company,Other,Microsoft,1.0
 I124055696,I4210119607,University of Copenhagen,Mavenoid (Sweden),education,company,Other,Other,1.0
 I124055696,I4210134591,University of Copenhagen,Telefonica Research and Development,education,company,Other,Other,1.0
 I124055696,I4210087053,University of Copenhagen,Microsoft (Germany),education,company,Other,Microsoft,1.0
 I124055696,I4210110431,University of Copenhagen,Microsoft (Netherlands),education,company,Other,Microsoft,1.0
 I124055696,I4210164937,University of Copenhagen,Microsoft Research (United Kingdom),education,company,Other,Microsoft,1.0
+I124055696,RAW_META,University of Copenhagen,Meta AI,education,company,Other,Meta,1.0
 I124055696,I4210166406,University of Copenhagen,Quantum Technologies (Sweden),education,company,Other,Other,1.0
 I124055696,I4210134778,University of Copenhagen,BioNTech (Germany),education,company,Other,Other,1.0
 I124227911,I1290206253,Ben-Gurion University of the Negev,Microsoft (United States),education,company,Other,Microsoft,1.0
@@ -419,6 +433,7 @@ I126231945,I4210125689,Queen's University Belfast,U-blox (Switzerland),education
 I126231945,I4210140114,Queen's University Belfast,Scripps (United States),education,company,Other,Other,1.0
 I126231945,I2799978770,Queen's University Belfast,X-Fab (Germany),education,company,Other,Other,1.0
 I126307644,I4210147129,University of Iowa,BrainAid (United States),education,company,Other,Other,1.0
+I126307644,RAW_XAI,University of Iowa,xAI,education,company,Other,xAI,1.0
 I126345244,I1306409833,Portland State University,Adobe Systems (United States),education,company,Other,Other,1.0
 I126350171,I1291425158,Fairfield University,Google (United States),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I126350171,I4210102029,Fairfield University,AstroTec Holding (Netherlands),education,company,Other,Other,1.0
@@ -444,6 +459,7 @@ I126520041,I4210160618,University of Science and Technology of China,Huawei Tech
 I126520041,I4210132948,University of Science and Technology of China,Shanghai Chengtou (China),education,company,Other,Other,1.0
 I126520041,I1290206253,University of Science and Technology of China,Microsoft (United States),education,company,Other,Microsoft,4.0
 I126520041,I4210110780,University of Science and Technology of China,HUI Research (Sweden),education,company,Other,Other,1.0
+I126520041,RAW_META,University of Science and Technology of China,Meta AI,education,company,Other,Meta,2.0
 I126520041,I4210159102,University of Science and Technology of China,Huawei Technologies (Sweden),education,company,Other,Other,2.0
 I126520041,I4210155268,University of Science and Technology of China,Salesforce (United States),education,company,Other,Other,1.0
 I126520041,I4210101844,University of Science and Technology of China,Research Institute of Precision Instruments (Russia),education,company,Other,Other,1.0
@@ -568,6 +584,7 @@ I1290206253,I82951845,Microsoft (United States),RMIT University,company,educatio
 I12912129,I4210114444,Northeastern University,Meta (United States),education,company,Other,Other,1.0
 I12912129,I873043661,Northeastern University,Voith (United States),education,company,Other,Other,1.0
 I12912129,I1291425158,Northeastern University,Google (United States),education,company,Other,Google / Google DeepMind / DeepMind,2.0
+I12912129,RAW_STABILITY_AI,Northeastern University,Stability AI,education,company,Other,Stability AI,1.0
 I12912129,I2250653659,Northeastern University,Tencent (China),education,company,Other,Other,1.0
 I12912129,I4210108625,Northeastern University,Microsoft (United Kingdom),education,company,Other,Microsoft,1.0
 I12912129,I4210156165,Northeastern University,Lenovo (China),education,company,Other,Other,1.0
@@ -867,6 +884,7 @@ I1306409833,I255234318,Adobe Systems (United States),Universidad de Zaragoza,com
 I1306409833,I130769515,Adobe Systems (United States),Pennsylvania State University,company,education,Other,Other,1.0
 I130701444,I4210137693,Georgia Institute of Technology,Siemens (United States),education,company,Other,Other,1.0
 I130701444,I1322124587,Georgia Institute of Technology,Booz Allen Hamilton (United States),education,company,Other,Other,1.0
+I130701444,RAW_META,Georgia Institute of Technology,Meta AI,education,company,Other,Meta,3.0
 I130701444,I4210090411,Georgia Institute of Technology,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,3.0
 I130701444,I4210110431,Georgia Institute of Technology,Microsoft (Netherlands),education,company,Other,Microsoft,1.0
 I130701444,I4210113297,Georgia Institute of Technology,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,3.0
@@ -883,6 +901,7 @@ I130701444,I1311688040,Georgia Institute of Technology,Amazon (United States),ed
 I130769515,I2252078561,Pennsylvania State University,Meta (Israel),education,company,Other,Other,1.0
 I130769515,I4210155268,Pennsylvania State University,Salesforce (United States),education,company,Other,Other,1.0
 I130769515,I4210167039,Pennsylvania State University,ServiceNow (United States),education,company,Other,Other,1.0
+I130769515,RAW_META,Pennsylvania State University,Meta AI,education,company,Other,Meta,1.0
 I130769515,I4210127875,Pennsylvania State University,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I130769515,I1311688040,Pennsylvania State University,Amazon (United States),education,company,Other,Amazon,1.0
 I1307721752,I149213910,AOL (United States),University of Antwerp,company,education,Other,Other,1.0
@@ -1060,6 +1079,7 @@ I133868755,I4210128910,Shanghai Medical College of Fudan University,Group Sense 
 I133868755,I2250653659,Shanghai Medical College of Fudan University,Tencent (China),education,company,Other,Other,1.0
 I1339471597,I4210146357,Humanitas University,Oxford BioMedica (United Kingdom),education,company,Other,Other,1.0
 I1339471597,I4210163099,Humanitas University,Igenbio (United States),education,company,Other,Other,1.0
+I1339471597,RAW_XAI,Humanitas University,xAI,education,company,Other,xAI,1.0
 I1339471597,I4210113058,Humanitas University,Roche (United Kingdom),education,company,Other,Other,1.0
 I1340210623,I169381384,Volvo (Sweden),University of Groningen,company,education,Other,Other,1.0
 I1340210623,I46597724,Volvo (Sweden),Poznań University of Technology,company,education,Other,Other,1.0
@@ -1149,6 +1169,7 @@ I1343180700,I54009628,Intel (United States),University of Bayreuth,company,educa
 I1343180700,I78650965,Intel (United States),Technische Universität Dresden,company,education,Other,Other,1.0
 I1343180700,I68891433,Intel (United States),Indian Institute of Technology Delhi,company,education,Other,Other,1.0
 I134446601,I2252078561,Berkeley College,Meta (Israel),education,company,Other,Other,2.0
+I134446601,RAW_META,Berkeley College,Meta AI,education,company,Other,Meta,4.0
 I134446601,I4210113490,Berkeley College,Infotec (United Kingdom),education,company,Other,Other,1.0
 I134446601,I4210132672,Berkeley College,Personal Space Technologies (Netherlands),education,company,Other,Other,1.0
 I134446601,I4210164937,Berkeley College,Microsoft Research (United Kingdom),education,company,Other,Microsoft,2.0
@@ -1177,6 +1198,8 @@ I135310074,I4210164937,University of Wisconsin–Madison,Microsoft Research (Uni
 I135310074,I4210149682,University of Wisconsin–Madison,Biogen (Belgium),education,company,Other,Other,1.0
 I135310074,I4210113297,University of Wisconsin–Madison,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I135310074,I4210114312,University of Wisconsin–Madison,True (United States),education,company,Other,Other,1.0
+I135310074,RAW_META,University of Wisconsin–Madison,Meta AI,education,company,Other,Meta,1.0
+I135310074,RAW_NVIDIA,University of Wisconsin–Madison,NVIDIA,education,company,Other,NVIDIA,1.0
 I135310074,I4210127875,University of Wisconsin–Madison,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I135310074,I4210116895,University of Wisconsin–Madison,Art Innovation (Netherlands),education,company,Other,Other,1.0
 I135310074,I4210164862,University of Wisconsin–Madison,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
@@ -1199,6 +1222,7 @@ I136199984,I4210164862,Harvard University,Artificial Intelligence in Medicine (C
 I136199984,I4210105678,Harvard University,Microsoft (Finland),education,company,Other,Microsoft,1.0
 I136199984,I4210164937,Harvard University,Microsoft Research (United Kingdom),education,company,Other,Microsoft,1.0
 I136199984,I4210135459,Harvard University,United Imaging Healthcare (China),education,company,Other,Other,4.0
+I136199984,RAW_MICROSOFT,Harvard University,Microsoft Research,education,company,Other,Microsoft,1.0
 I136199984,I4210101778,Harvard University,Samsung (United States),education,company,Other,Other,2.0
 I136199984,I4210152047,Harvard University,PDL BioPharma (United States),education,company,Other,Other,1.0
 I136199984,I4210110431,Harvard University,Microsoft (Netherlands),education,company,Other,Microsoft,1.0
@@ -1227,6 +1251,7 @@ I136199984,I4210116328,Harvard University,Precision for Medicine (United States)
 I136199984,I4210105785,Harvard University,Intelligent Systems Research (United States),education,company,Other,Other,1.0
 I137853757,I4210127325,Howard University,Broadcom (United States),education,company,Other,Other,1.0
 I137902535,I4210149777,North Carolina State University,Launchpad Central (United States),education,company,Other,Other,1.0
+I137902535,RAW_META,North Carolina State University,Meta AI,education,company,Other,Meta,1.0
 I137902535,I98301712,North Carolina State University,Baidu (China),education,company,Other,Other,1.0
 I138006243,I4210102029,University of Arizona,AstroTec Holding (Netherlands),education,company,Other,Other,1.0
 I138006243,I4210131439,University of Arizona,Applied Mathematics (United States),education,company,Other,Other,1.0
@@ -1264,8 +1289,11 @@ I139264467,I207623266,Seoul National University,Kao Corporation (Japan),educatio
 I139264467,I4210113520,Seoul National University,Brain (Germany),education,company,Other,Other,1.0
 I139264467,I60922564,Seoul National University,Naver (South Korea),education,company,Other,Other,1.0
 I139264467,I4210164862,Seoul National University,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
+I139264467,RAW_STABILITY_AI,Seoul National University,Stability AI,education,company,Other,Stability AI,1.0
 I139264467,I4210139352,Seoul National University,Hyundai Engineering (South Korea),education,company,Other,Other,1.0
+I139264467,RAW_XAI,Seoul National University,xAI,education,company,Other,xAI,1.0
 I139322472,I4210110242,Universiti Sains Malaysia,Digital Science (United States),education,company,Other,Other,1.0
+I13955877,RAW_NVIDIA,Bar-Ilan University,NVIDIA,education,company,Other,NVIDIA,4.0
 I13955877,I80687555,Bar-Ilan University,Israel Electric (Israel),education,company,Other,Other,1.0
 I13955877,I4210125051,Bar-Ilan University,Microsoft (Israel),education,company,Other,Microsoft,1.0
 I139660479,I17442442,Central South University,State Grid Corporation of China (China),education,company,Other,Other,1.0
@@ -1313,8 +1341,10 @@ I141596103,I4210134421,University of Lisbon,INTRASOFT International (Luxembourg)
 I141596103,I4210144063,University of Lisbon,PLUX - Wireless Biosignals (Portugal),education,company,Other,Other,1.0
 I141596103,I4210164862,University of Lisbon,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
 I141945490,I886582847,University of British Columbia,Western Forest Products,education,company,Other,Other,1.0
+I141945490,RAW_MICROSOFT,University of British Columbia,Microsoft Research,education,company,Other,Microsoft,1.0
 I141945490,I4210131377,University of British Columbia,Universidad Nacional Intercultural de la Amazonía,education,company,Other,Amazon,1.0
 I141945490,I4387152943,University of British Columbia,Universidad Nacional Autónoma de Alto Amazonas,education,company,Other,Amazon,1.0
+I141945490,RAW_NVIDIA,University of British Columbia,NVIDIA,education,company,Other,NVIDIA,1.0
 I141945490,I180857899,University of British Columbia,Pfizer (United States),education,company,Other,Other,1.0
 I141945490,I4210100528,University of British Columbia,ENN (China),education,company,Other,Other,1.0
 I141945490,I4210089985,University of British Columbia,Amazon (Germany),education,company,Other,Amazon,1.0
@@ -1349,6 +1379,7 @@ I143396566,I4210161460,Fırat University,OpenAI (United States),education,compan
 I143397708,I4210164862,Innsbruck Medical University,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
 I143593769,I4210144436,East China University of Science and Technology,Shanghai Huayi Group (China),education,company,Other,Other,1.0
 I143868143,I4402554030,Anhui University,"Chongqing Zhijian Life Technology Co., Ltd (China)",education,company,Other,Other,1.0
+I143910747,RAW_NVIDIA,TH Bingen University of Applied Sciences,NVIDIA,education,company,Other,NVIDIA,1.0
 I14396692,I4210089607,Tokyo University of Information Sciences,CyberAgent (Japan),education,company,Other,Other,1.0
 I145019703,I4210096856,Al-Zaytoonah University of Jordan,Innovation Engineering (Italy),education,company,Other,Other,1.0
 I145311948,I4210102181,Johns Hopkins University,Mallinckrodt (United States),education,company,Other,Other,1.0
@@ -1359,6 +1390,7 @@ I145311948,I4210087053,Johns Hopkins University,Microsoft (Germany),education,co
 I145311948,I4210108625,Johns Hopkins University,Microsoft (United Kingdom),education,company,Other,Microsoft,1.0
 I145311948,I4210105678,Johns Hopkins University,Microsoft (Finland),education,company,Other,Microsoft,1.0
 I145311948,I98301712,Johns Hopkins University,Baidu (China),education,company,Other,Other,1.0
+I145311948,RAW_META,Johns Hopkins University,Meta AI,education,company,Other,Meta,1.0
 I145311948,I4210114444,Johns Hopkins University,Meta (United States),education,company,Other,Other,1.0
 I145311948,I4210127121,Johns Hopkins University,Protein Metrics (United States),education,company,Other,Other,1.0
 I145311948,I4210139617,Johns Hopkins University,VIR Biotechnology (United States),education,company,Other,Other,1.0
@@ -1405,6 +1437,7 @@ I146655781,I4210088980,University of Liverpool,Michelin (France),education,compa
 I146655781,I98301712,University of Liverpool,Baidu (China),education,company,Other,Other,1.0
 I146655781,I4210103986,University of Liverpool,Jingdong (China),education,company,Other,Other,1.0
 I146655781,I4210140114,University of Liverpool,Scripps (United States),education,company,Other,Other,1.0
+I146655781,RAW_META,University of Liverpool,Meta AI,education,company,Other,Meta,1.0
 I147853995,I4210150323,University of Alaska Anchorage,Cardinal Health (United States),education,company,Other,Other,1.0
 I147853995,I78559203,University of Alaska Anchorage,FedEx (United States),education,company,Other,Other,1.0
 I147869694,I167360494,Continental (Germany),University of Wuppertal,company,education,Other,Other,1.0
@@ -1463,7 +1496,9 @@ I151746483,I4210153546,University of Waterloo,Flatiron Health (United States),ed
 I151746483,I4210167039,University of Waterloo,ServiceNow (United States),education,company,Other,Other,2.0
 I151746483,I2252078561,University of Waterloo,Meta (Israel),education,company,Other,Other,1.0
 I151746483,I4210155268,University of Waterloo,Salesforce (United States),education,company,Other,Other,1.0
+I151746483,RAW_META,University of Waterloo,Meta AI,education,company,Other,Meta,1.0
 I151746483,I4210163196,University of Waterloo,Signify (Netherlands),education,company,Other,Other,1.0
+I151746483,RAW_NVIDIA,University of Waterloo,NVIDIA,education,company,Other,NVIDIA,2.0
 I151746483,I4210127875,University of Waterloo,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I151746483,I4210164862,University of Waterloo,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
 I151746483,I4210114312,University of Waterloo,True (United States),education,company,Other,Other,1.0
@@ -1498,6 +1533,7 @@ I154099455,I4210134591,Shandong University,Telefonica Research and Development,e
 I154130895,I4210160517,University of Auckland,TiDA (New Zealand),education,company,Other,Other,1.0
 I154130895,I4387153386,University of Auckland,"Carnegie Learning, Inc. (United States)",education,company,Other,Other,1.0
 I154387261,I169724904,Vita-Salute San Raffaele University,Zimmer Biomet (Netherlands),education,company,Other,Other,1.0
+I154425047,RAW_XAI,University of Alberta,xAI,education,company,Other,xAI,2.0
 I154425047,I166311279,University of Alberta,Wacom (Japan),education,company,Other,Other,2.0
 I154425047,I4210101739,University of Alberta,MS Biotec (United States),education,company,Other,Other,1.0
 I154425047,I873043661,University of Alberta,Voith (United States),education,company,Other,Other,1.0
@@ -1567,6 +1603,8 @@ I157725225,I4210127875,University of Illinois Urbana-Champaign,Nvidia (United St
 I157725225,I4210164862,University of Illinois Urbana-Champaign,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
 I157725225,I4210114312,University of Illinois Urbana-Champaign,True (United States),education,company,Other,Other,1.0
 I157725225,I2250653659,University of Illinois Urbana-Champaign,Tencent (China),education,company,Other,Other,2.0
+I157725225,RAW_MICROSOFT,University of Illinois Urbana-Champaign,Microsoft Research,education,company,Other,Microsoft,1.0
+I157725225,RAW_META,University of Illinois Urbana-Champaign,Meta AI,education,company,Other,Meta,1.0
 I157725225,I4210107260,University of Illinois Urbana-Champaign,Apple (United Kingdom),education,company,Other,Apple,1.0
 I157725225,I4210114444,University of Illinois Urbana-Champaign,Meta (United States),education,company,Other,Other,2.0
 I157725225,I4210155268,University of Illinois Urbana-Champaign,Salesforce (United States),education,company,Other,Other,1.0
@@ -1596,6 +1634,7 @@ I158248296,I4210132672,Amirkabir University of Technology,Personal Space Technol
 I158248296,I4210164937,Amirkabir University of Technology,Microsoft Research (United Kingdom),education,company,Other,Microsoft,1.0
 I158338959,I4210110242,University of Kerala,Digital Science (United States),education,company,Other,Other,1.0
 I158552681,I4210164862,University of Life Sciences in Lublin,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
+I158552681,RAW_XAI,University of Life Sciences in Lublin,xAI,education,company,Other,xAI,1.0
 I158842170,I2250653659,Chongqing University,Tencent (China),education,company,Other,Other,1.0
 I158842170,I4210158968,Chongqing University,C & L Instruments (United States),education,company,Other,Other,1.0
 I158842170,I4210120648,Chongqing University,China Railway Major Bridge Reconnaissance & Design Institute (China),education,company,Other,Other,1.0
@@ -1633,6 +1672,7 @@ I161296585,I4210087053,Tokyo University of Science,Microsoft (Germany),education
 I161296585,I4210108625,Tokyo University of Science,Microsoft (United Kingdom),education,company,Other,Microsoft,1.0
 I161318765,I4210127875,"University of California, Los Angeles",Nvidia (United States),education,company,Other,NVIDIA,1.0
 I161318765,I60922564,"University of California, Los Angeles",Naver (South Korea),education,company,Other,Other,1.0
+I161318765,RAW_HUGGING_FACE,"University of California, Los Angeles",Hugging Face,education,company,Other,Hugging Face,1.0
 I161318765,I2802212502,"University of California, Los Angeles",TiGenix (Spain),education,company,Other,Other,1.0
 I161318765,I36194607,"University of California, Los Angeles",Duke Energy (United States),education,company,Other,Other,1.0
 I161318765,I4210149682,"University of California, Los Angeles",Biogen (Belgium),education,company,Other,Other,1.0
@@ -1656,6 +1696,7 @@ I16269868,I4210146352,Santa Clara University,Software602 (Czechia),education,com
 I162714631,I2252078561,George Mason University,Meta (Israel),education,company,Other,Other,1.0
 I162714631,I4210155268,George Mason University,Salesforce (United States),education,company,Other,Other,1.0
 I162714631,I4210167039,George Mason University,ServiceNow (United States),education,company,Other,Other,1.0
+I162714631,RAW_META,George Mason University,Meta AI,education,company,Other,Meta,1.0
 I162714631,I2800104224,George Mason University,Blackstone (United States),education,company,Other,Other,1.0
 I162714631,I4210164937,George Mason University,Microsoft Research (United Kingdom),education,company,Other,Microsoft,1.0
 I162714631,I55884533,George Mason University,BlackRock (United States),education,company,Other,Other,1.0
@@ -1698,10 +1739,12 @@ I16365422,I4210110242,Hefei University of Technology,Digital Science (United Sta
 I16365422,I45928872,Hefei University of Technology,Alibaba Group (China),education,company,Other,Other,1.0
 I163753206,I4210114081,Chungbuk National University,Korea Kacoh (South Korea),education,company,Other,Other,1.0
 I16391192,I80687555,Tel Aviv University,Israel Electric (Israel),education,company,Other,Other,2.0
+I16391192,RAW_NVIDIA,Tel Aviv University,NVIDIA,education,company,Other,NVIDIA,6.0
 I16391192,I2250653659,Tel Aviv University,Tencent (China),education,company,Other,Other,1.0
 I16391192,I4210112104,Tel Aviv University,Innovative Research (United States),education,company,Other,Other,1.0
 I16391192,I70745867,Tel Aviv University,KLA (United States),education,company,Other,Other,1.0
 I16391192,I4210117425,Tel Aviv University,Google (Israel),education,company,Other,Google / Google DeepMind / DeepMind,4.0
+I16391192,RAW_META,Tel Aviv University,Meta AI,education,company,Other,Meta,1.0
 I16391192,I4210142583,Tel Aviv University,Snap (United States),education,company,Other,Other,2.0
 I16391192,I4210101321,Tel Aviv University,Israel Ports Development and Assets (Israel),education,company,Other,Other,1.0
 I16391192,I4210125051,Tel Aviv University,Microsoft (Israel),education,company,Other,Microsoft,1.0
@@ -1715,6 +1758,7 @@ I165102784,I4210087596,Duquesne University,Qualcomm (United States),education,co
 I165102784,I4210105785,Duquesne University,Intelligent Systems Research (United States),education,company,Other,Other,1.0
 I165143802,I4387153386,The University of Queensland,"Carnegie Learning, Inc. (United States)",education,company,Other,Other,1.0
 I165143802,I4210163196,The University of Queensland,Signify (Netherlands),education,company,Other,Other,1.0
+I165143802,RAW_NVIDIA,The University of Queensland,NVIDIA,education,company,Other,NVIDIA,1.0
 I165339363,I4210110242,Universidad de Oviedo,Digital Science (United States),education,company,Other,Other,1.0
 I165368041,I4210100977,University of Iceland,IBM (Ireland),education,company,Other,Other,1.0
 I165507594,I49946491,Kangwon National University,Hyundai Motors (South Korea),education,company,Other,Other,1.0
@@ -1734,6 +1778,7 @@ I165911609,I4210112069,Changsha Medical University,Theranostics (New Zealand),ed
 I165932596,I4210100430,National University of Singapore,Google (Switzerland),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I165932596,I4210127875,National University of Singapore,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I165932596,I60922564,National University of Singapore,Naver (South Korea),education,company,Other,Other,1.0
+I165932596,RAW_HUGGING_FACE,National University of Singapore,Hugging Face,education,company,Other,Hugging Face,1.0
 I165932596,I4210121800,National University of Singapore,Chan Zuckerberg Initiative (United States),education,company,Other,Other,1.0
 I165932596,I4210113490,National University of Singapore,Infotec (United Kingdom),education,company,Other,Other,1.0
 I165932596,I4210132672,National University of Singapore,Personal Space Technologies (Netherlands),education,company,Other,Other,1.0
@@ -1743,6 +1788,7 @@ I165932596,I4210159102,National University of Singapore,Huawei Technologies (Swe
 I165932596,I45928872,National University of Singapore,Alibaba Group (China),education,company,Other,Other,1.0
 I165932596,I2250653659,National University of Singapore,Tencent (China),education,company,Other,Other,3.0
 I165932596,I4210113369,National University of Singapore,Microsoft Research Asia (China),education,company,Other,Microsoft,3.0
+I165932596,RAW_MICROSOFT,National University of Singapore,Microsoft Research,education,company,Other,Microsoft,1.0
 I165932596,I4210095624,National University of Singapore,Alibaba Group (United States),education,company,Other,Other,2.0
 I165932596,I4210162141,National University of Singapore,Microsoft (India),education,company,Other,Microsoft,1.0
 I165932596,I98301712,National University of Singapore,Baidu (China),education,company,Other,Other,1.0
@@ -1751,6 +1797,7 @@ I165932596,I4210110199,National University of Singapore,Vision Medicals (China),
 I165932596,I4210133785,National University of Singapore,Rehab-Robotics (China),education,company,Other,Other,1.0
 I165932596,I2250955327,National University of Singapore,Huawei Technologies (China),education,company,Other,Other,1.0
 I165932596,I4401726859,National University of Singapore,Kuaishou (China),education,company,Other,Other,1.0
+I165932596,RAW_NVIDIA,National University of Singapore,NVIDIA,education,company,Other,NVIDIA,1.0
 I165932596,I4210086143,National University of Singapore,Alibaba Group (Cayman Islands),education,company,Other,Other,1.0
 I165951966,I199117387,The University of Texas at San Antonio Health Science Center,Promega (United States),education,company,Other,Other,1.0
 I165951966,I4210164523,The University of Texas at San Antonio Health Science Center,Foghorn Therapeutics (United States),education,company,Other,Other,1.0
@@ -1774,6 +1821,7 @@ I16718484,I31512782,Hess (United States),Technische Universität Darmstadt,compa
 I16733864,I4210113369,National Taiwan University,Microsoft Research Asia (China),education,company,Other,Microsoft,1.0
 I16733864,I4210098776,National Taiwan University,Lawrie Technology (United States),education,company,Other,Other,1.0
 I16733864,I4210127875,National Taiwan University,Nvidia (United States),education,company,Other,NVIDIA,1.0
+I16733864,RAW_NVIDIA,National Taiwan University,NVIDIA,education,company,Other,NVIDIA,1.0
 I16733864,I4210110431,National Taiwan University,Microsoft (Netherlands),education,company,Other,Microsoft,1.0
 I16733864,I4210140256,National Taiwan University,Silicon Designs (United States),education,company,Other,Other,1.0
 I167360494,I220619192,University of Wuppertal,Valeo (France),education,company,Other,Other,1.0
@@ -1840,6 +1888,7 @@ I170583851,I17170469,University of Opole,Solvay (Belgium),education,company,Othe
 I170658231,I4210123028,Osnabrück University,Thales (Germany),education,company,Other,Other,1.0
 I170658231,I4210158702,Osnabrück University,Resonance Research (United States),education,company,Other,Other,1.0
 I170897317,I4210164937,Duke University,Microsoft Research (United Kingdom),education,company,Other,Microsoft,3.0
+I170897317,RAW_META,Duke University,Meta AI,education,company,Other,Meta,1.0
 I170897317,I4210155268,Duke University,Salesforce (United States),education,company,Other,Other,2.0
 I170897317,I2802212502,Duke University,TiGenix (Spain),education,company,Other,Other,1.0
 I170897317,I36194607,Duke University,Duke Energy (United States),education,company,Other,Other,1.0
@@ -1897,9 +1946,12 @@ I173093425,I4210146357,Chang Gung University,Oxford BioMedica (United Kingdom),e
 I173093425,I4210163099,Chang Gung University,Igenbio (United States),education,company,Other,Other,1.0
 I173893349,I4210129365,Shokei Gakuin University,Navitas Systems (United States),education,company,Other,Other,1.0
 I174025329,I4210119728,University of the Sunshine Coast,Sustainable Innovation (Sweden),education,company,Other,Other,1.0
+I174306211,RAW_META,Technion – Israel Institute of Technology,Meta AI,education,company,Other,Meta,1.0
 I174306211,I4210117425,Technion – Israel Institute of Technology,Google (Israel),education,company,Other,Google / Google DeepMind / DeepMind,2.0
 I1743320,I4210112286,Palo Alto University,The Metropolitan Opera (United States),education,company,Other,Other,1.0
+I1743320,RAW_META,Palo Alto University,Meta AI,education,company,Other,Meta,1.0
 I1743320,I4210164862,Palo Alto University,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
+I1743320,RAW_STABILITY_AI,Palo Alto University,Stability AI,education,company,Other,Stability AI,1.0
 I17442442,I41725924,State Grid Corporation of China (China),Muroran Institute of Technology,company,education,Other,Other,1.0
 I17442442,I200769079,State Grid Corporation of China (China),Hong Kong University of Science and Technology,company,education,Other,Other,1.0
 I17442442,I82880672,State Grid Corporation of China (China),Beihang University,company,education,Other,Other,1.0
@@ -1914,6 +1966,7 @@ I175594653,I4210090411,John Brown University,Google DeepMind (United Kingdom),ed
 I175594653,I4210118911,John Brown University,META Group,education,company,Other,Other,1.0
 I17626003,I4210128994,University of Rhode Island,In-Situ (United States),education,company,Other,Other,1.0
 I176453806,I4210114444,University of Potsdam,Meta (United States),education,company,Other,Other,1.0
+I176453806,RAW_META,University of Potsdam,Meta AI,education,company,Other,Meta,1.0
 I176453806,I4210108778,University of Potsdam,Fresenius (Germany),education,company,Other,Other,1.0
 I176601375,I62885914,Khalifa University of Science and Technology,Universidade Federal do Amazonas,education,company,Other,Amazon,1.0
 I176601375,I4210123571,Khalifa University of Science and Technology,Huawei Technologies (France),education,company,Other,Other,2.0
@@ -1929,6 +1982,7 @@ I177639307,I4210135459,University of Dundee,United Imaging Healthcare (China),ed
 I177639307,I4210140114,University of Dundee,Scripps (United States),education,company,Other,Other,1.0
 I177725633,I2252078561,Chinese University of Hong Kong,Meta (Israel),education,company,Other,Other,1.0
 I177725633,I4210113297,Chinese University of Hong Kong,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
+I177725633,RAW_META,Chinese University of Hong Kong,Meta AI,education,company,Other,Meta,2.0
 I177725633,I4210103986,Chinese University of Hong Kong,Jingdong (China),education,company,Other,Other,1.0
 I177725633,I4210128910,Chinese University of Hong Kong,Group Sense (China),education,company,Other,Other,7.0
 I177725633,I4210092218,Chinese University of Hong Kong,Sensimetrics Corporation,education,company,Other,Other,2.0
@@ -1970,8 +2024,10 @@ I179193067,I4210164862,Khon Kaen University,Artificial Intelligence in Medicine 
 I179225836,I4210126670,University of Augsburg,Synlab (Germany),education,company,Other,Other,1.0
 I17974374,I4210087094,Universidade de São Paulo,Syngenta (United Kingdom),education,company,Other,Other,1.0
 I18014758,I4387154989,Simon Fraser University,Hugging Face,education,company,Other,Hugging Face,1.0
+I18014758,RAW_HUGGING_FACE,Simon Fraser University,Hugging Face,education,company,Other,Hugging Face,2.0
 I18014758,I4210127875,Simon Fraser University,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I18014758,I60922564,Simon Fraser University,Naver (South Korea),education,company,Other,Other,1.0
+I18014758,RAW_NVIDIA,Simon Fraser University,NVIDIA,education,company,Other,NVIDIA,2.0
 I18014758,I4210103820,Simon Fraser University,Autodesk (Canada),education,company,Other,Other,1.0
 I18014758,I4210104522,Simon Fraser University,Autodesk (United Kingdom),education,company,Other,Other,1.0
 I18014758,I4210101778,Simon Fraser University,Samsung (United States),education,company,Other,Other,1.0
@@ -1998,6 +2054,7 @@ I180670191,I4210121800,"University of California, San Francisco",Chan Zuckerberg
 I180670191,I4210088273,"University of California, San Francisco",Align Technology (United States),education,company,Other,Other,1.0
 I180670191,I4210155268,"University of California, San Francisco",Salesforce (United States),education,company,Other,Other,1.0
 I180670191,I4210164862,"University of California, San Francisco",Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
+I180670191,RAW_MICROSOFT,"University of California, San Francisco",Microsoft Research,education,company,Other,Microsoft,1.0
 I180670191,I4210089246,"University of California, San Francisco",Hearst (United States),education,company,Other,Other,1.0
 I180670191,I4210150894,"University of California, San Francisco",Jacobs (United States),education,company,Other,Other,1.0
 I180670191,I4210140900,"University of California, San Francisco",Fisher Bioservices (United States),education,company,Other,Other,1.0
@@ -2071,6 +2128,7 @@ I183935753,I4210090411,King's College London,Google DeepMind (United Kingdom),ed
 I183935753,I4210127875,King's College London,Nvidia (United States),education,company,Other,NVIDIA,2.0
 I183935753,I4210155982,King's College London,Oxford Nanopore Technologies (United Kingdom),education,company,Other,Other,1.0
 I183935753,I4210148032,King's College London,Collaborations Pharmaceuticals (United States),education,company,Other,Other,1.0
+I183935753,RAW_META,King's College London,Meta AI,education,company,Other,Meta,1.0
 I183935753,I4210140114,King's College London,Scripps (United States),education,company,Other,Other,1.0
 I183935753,I4210111288,King's College London,Meta (United Kingdom),education,company,Other,Other,1.0
 I183935753,I4210114444,King's College London,Meta (United States),education,company,Other,Other,1.0
@@ -2094,6 +2152,7 @@ I1850255,I4210086985,University of Basel,FIT Consulting (Italy),education,compan
 I1850255,I4210112964,University of Basel,Taylor Wimpey (United Kingdom),education,company,Other,Other,1.0
 I185103710,I4210101778,"University of California, Santa Cruz",Samsung (United States),education,company,Other,Other,2.0
 I185103710,I4210126929,"University of California, Santa Cruz",CE Technologies (United Kingdom),education,company,Other,Other,1.0
+I185103710,RAW_META,"University of California, Santa Cruz",Meta AI,education,company,Other,Meta,1.0
 I185103710,I2250653659,"University of California, Santa Cruz",Tencent (China),education,company,Other,Other,1.0
 I185163786,I4210095918,King Abdulaziz University,Ta Solutions (China),education,company,Other,Other,1.0
 I185163786,I4210163794,King Abdulaziz University,Data Management (Italy),education,company,Other,Other,1.0
@@ -2101,8 +2160,10 @@ I185163786,I97750245,King Abdulaziz University,Software (Spain),education,compan
 I185163786,I4210124966,King Abdulaziz University,Innovation Cluster (Canada),education,company,Other,Other,1.0
 I185261750,I4210090411,University of Toronto,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I185261750,I4210087094,University of Toronto,Syngenta (United Kingdom),education,company,Other,Other,1.0
+I185261750,RAW_META,University of Toronto,Meta AI,education,company,Other,Meta,2.0
 I185261750,I4210113654,University of Toronto,IBM (Canada),education,company,Other,Other,1.0
 I185261750,I4210101739,University of Toronto,MS Biotec (United States),education,company,Other,Other,1.0
+I185261750,RAW_NVIDIA,University of Toronto,NVIDIA,education,company,Other,NVIDIA,4.0
 I185261750,I4210113297,University of Toronto,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I185261750,I4210127875,University of Toronto,Nvidia (United States),education,company,Other,NVIDIA,2.0
 I185261750,I4210164862,University of Toronto,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
@@ -2225,6 +2286,7 @@ I19668297,I4210086985,Buckinghamshire New University,FIT Consulting (Italy),educ
 I19668297,I4210112964,Buckinghamshire New University,Taylor Wimpey (United Kingdom),education,company,Other,Other,1.0
 I196829312,I4210144831,La Trobe University,Photon Systems Instruments (Czechia),education,company,Other,Other,1.0
 I197251160,I4210117425,Hebrew University of Jerusalem,Google (Israel),education,company,Other,Google / Google DeepMind / DeepMind,3.0
+I197251160,RAW_META,Hebrew University of Jerusalem,Meta AI,education,company,Other,Meta,1.0
 I197323543,I4210128994,Johannes Gutenberg University Mainz,In-Situ (United States),education,company,Other,Other,1.0
 I197323543,I4210101739,Johannes Gutenberg University Mainz,MS Biotec (United States),education,company,Other,Other,1.0
 I197323543,I4210097178,Johannes Gutenberg University Mainz,Behavioral Pharma (United States),education,company,Other,Other,1.0
@@ -2296,6 +2358,7 @@ I200769079,I4210146936,Hong Kong University of Science and Technology,Huawei Tec
 I200769079,I4210091137,Hong Kong University of Science and Technology,NetEase (China),education,company,Other,Other,1.0
 I200769079,I4210103986,Hong Kong University of Science and Technology,Jingdong (China),education,company,Other,Other,1.0
 I200769079,I4210160618,Hong Kong University of Science and Technology,Huawei Technologies (United Kingdom),education,company,Other,Other,1.0
+I200769079,RAW_MICROSOFT,Hong Kong University of Science and Technology,Microsoft Research,education,company,Other,Microsoft,1.0
 I200769079,I4210089985,Hong Kong University of Science and Technology,Amazon (Germany),education,company,Other,Amazon,1.0
 I200769079,I4210150693,Hong Kong University of Science and Technology,The Medical Device (United Kingdom),education,company,Other,Other,1.0
 I200769079,I4210116328,Hong Kong University of Science and Technology,Precision for Medicine (United States),education,company,Other,Other,1.0
@@ -2314,6 +2377,7 @@ I20089843,I4210131439,Princeton University,Applied Mathematics (United States),e
 I20089843,I4210143820,Princeton University,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
 I20089843,I4210153546,Princeton University,Flatiron Health (United States),education,company,Other,Other,4.0
 I20089843,I4210117425,Princeton University,Google (Israel),education,company,Other,Google / Google DeepMind / DeepMind,1.0
+I20089843,RAW_META,Princeton University,Meta AI,education,company,Other,Meta,1.0
 I20089843,I4210090411,Princeton University,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,5.0
 I20089843,I4210110431,Princeton University,Microsoft (Netherlands),education,company,Other,Microsoft,1.0
 I20089843,I4210113297,Princeton University,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,4.0
@@ -2333,8 +2397,10 @@ I20089843,I4210109704,Princeton University,Bio Signal Group (United States),educ
 I20089843,I4210138066,Princeton University,Insilixa (United States),education,company,Other,Other,1.0
 I20089843,I4387154989,Princeton University,Hugging Face,education,company,Other,Hugging Face,1.0
 I20089843,I889804353,Princeton University,Robert Bosch (Germany),education,company,Other,Other,1.0
+I201181511,RAW_NVIDIA,École Nationale Supérieure de Techniques Avancées,NVIDIA,education,company,Other,NVIDIA,1.0
 I20126385,I4210161436,Inonu University,Neurotrack Technologies (United States),education,company,Other,Other,1.0
 I201384688,I4210127743,National University of Computer and Emerging Sciences,Pakistan Telecommunication Company (Pakistan),education,company,Other,Other,1.0
+I201448701,RAW_META,University of Washington,Meta AI,education,company,Other,Meta,7.0
 I201448701,I4210113297,University of Washington,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,2.0
 I201448701,I4210163239,University of Washington,Helix (United States),education,company,Other,Other,1.0
 I201448701,I4210099679,University of Washington,Protein Express (United States),education,company,Other,Other,1.0
@@ -2366,6 +2432,7 @@ I201726411,I4210159102,United Arab Emirates University,Huawei Technologies (Swed
 I201799495,I4210127199,Middle East Technical University,Türksat (Turkey),education,company,Other,Other,1.0
 I201799495,I56303344,Middle East Technical University,Aselsan (Turkey),education,company,Other,Other,1.0
 I201850948,I4401726811,Fulda University of Applied Sciences,Hartford Financial Services (United States),education,company,Other,Other,1.0
+I202276237,RAW_XAI,Medical University of Graz,xAI,education,company,Other,xAI,2.0
 I20231570,I4210113369,Peking University,Microsoft Research Asia (China),education,company,Other,Microsoft,8.0
 I20231570,I4210128910,Peking University,Group Sense (China),education,company,Other,Other,2.0
 I20231570,I4210163239,Peking University,Helix (United States),education,company,Other,Other,1.0
@@ -2382,6 +2449,7 @@ I20231570,I4210159102,Peking University,Huawei Technologies (Sweden),education,c
 I20231570,I4210135422,Peking University,Microsoft (Norway),education,company,Other,Microsoft,1.0
 I20231570,I4210157345,Peking University,Venus Medtech (China),education,company,Other,Other,1.0
 I20231570,I97750245,Peking University,Software (Spain),education,company,Other,Other,2.0
+I20231570,RAW_MICROSOFT,Peking University,Microsoft Research,education,company,Other,Microsoft,1.0
 I20231570,I4210107260,Peking University,Apple (United Kingdom),education,company,Other,Apple,1.0
 I20231570,I45928872,Peking University,Alibaba Group (China),education,company,Other,Other,1.0
 I20231570,I4210136246,Peking University,China Telecom (China),education,company,Other,Other,1.0
@@ -2405,6 +2473,8 @@ I202697423,I2800808753,University of Zurich,Thales (Netherlands),education,compa
 I202697423,I4210161436,University of Zurich,Neurotrack Technologies (United States),education,company,Other,Other,1.0
 I202697423,I4210164862,University of Zurich,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,2.0
 I202697423,I4210113297,University of Zurich,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,2.0
+I202697423,RAW_COHERE,University of Zurich,Cohere,education,company,Other,Cohere,1.0
+I202697423,RAW_STABILITY_AI,University of Zurich,Stability AI,education,company,Other,Stability AI,1.0
 I202697423,I4210090411,University of Zurich,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I203238179,I4210102029,Rhodes University,AstroTec Holding (Netherlands),education,company,Other,Other,1.0
 I203238179,I4210131439,Rhodes University,Applied Mathematics (United States),education,company,Other,Other,1.0
@@ -2444,6 +2514,7 @@ I204778367,I4210161436,Norwegian University of Science and Technology,Neurotrack
 I204824540,I2250653659,University of Wollongong,Tencent (China),education,company,Other,Other,2.0
 I204983213,I4210103986,Harbin Institute of Technology,Jingdong (China),education,company,Other,Other,1.0
 I204983213,I2250653659,Harbin Institute of Technology,Tencent (China),education,company,Other,Other,4.0
+I204983213,RAW_META,Harbin Institute of Technology,Meta AI,education,company,Other,Meta,1.0
 I204983213,I4401726822,Harbin Institute of Technology,Ping An (China),education,company,Other,Other,1.0
 I204983213,I4210102458,Harbin Institute of Technology,Novel (United States),education,company,Other,Other,1.0
 I204983213,I4210159102,Harbin Institute of Technology,Huawei Technologies (Sweden),education,company,Other,Other,2.0
@@ -2456,6 +2527,7 @@ I204983213,I98301712,Harbin Institute of Technology,Baidu (China),education,comp
 I204983213,I4210113369,Harbin Institute of Technology,Microsoft Research Asia (China),education,company,Other,Microsoft,1.0
 I204983213,I4210095624,Harbin Institute of Technology,Alibaba Group (United States),education,company,Other,Other,2.0
 I204983213,I862669128,Harbin Institute of Technology,Xiaomi (China),education,company,Other,Other,1.0
+I204983213,RAW_MICROSOFT,Harbin Institute of Technology,Microsoft Research,education,company,Other,Microsoft,1.0
 I204983213,I4210086143,Harbin Institute of Technology,Alibaba Group (Cayman Islands),education,company,Other,Other,1.0
 I205023500,I4210139231,Chicago Kent College of Law,BioVentures (United States),education,company,Other,Other,2.0
 I205023500,I4210147944,Chicago Kent College of Law,ABS Consulting (United States),education,company,Other,Other,2.0
@@ -2465,6 +2537,7 @@ I205237279,I4210100528,Nankai University,ENN (China),education,company,Other,Oth
 I205237279,I4210156165,Nankai University,Lenovo (China),education,company,Other,Other,1.0
 I205274468,I4210127875,Trinity College Dublin,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I205274468,I60922564,Trinity College Dublin,Naver (South Korea),education,company,Other,Other,1.0
+I205274468,RAW_HUGGING_FACE,Trinity College Dublin,Hugging Face,education,company,Other,Hugging Face,1.0
 I205274468,I4210108778,Trinity College Dublin,Fresenius (Germany),education,company,Other,Other,1.0
 I205274468,I4210090411,Trinity College Dublin,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I205274468,I4210113297,Trinity College Dublin,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
@@ -2477,6 +2550,7 @@ I205783295,I4210131439,Cornell University,Applied Mathematics (United States),ed
 I205783295,I4210143820,Cornell University,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
 I205783295,I4210153546,Cornell University,Flatiron Health (United States),education,company,Other,Other,2.0
 I205783295,I4387154989,Cornell University,Hugging Face,education,company,Other,Hugging Face,1.0
+I205783295,RAW_HUGGING_FACE,Cornell University,Hugging Face,education,company,Other,Hugging Face,1.0
 I205783295,I4210100430,Cornell University,Google (Switzerland),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I205783295,I4210151850,Cornell University,SC Johnson (United States),education,company,Other,Other,2.0
 I205783295,I4210110431,Cornell University,Microsoft (Netherlands),education,company,Other,Microsoft,2.0
@@ -2529,6 +2603,7 @@ I219193219,I267592682,Purdue University West Lafayette,Williams (United States),
 I219193219,I4210089985,Purdue University West Lafayette,Amazon (Germany),education,company,Other,Amazon,1.0
 I219193219,I4210164937,Purdue University West Lafayette,Microsoft Research (United Kingdom),education,company,Other,Microsoft,2.0
 I219193219,I4210153546,Purdue University West Lafayette,Flatiron Health (United States),education,company,Other,Other,1.0
+I219193219,RAW_NVIDIA,Purdue University West Lafayette,NVIDIA,education,company,Other,NVIDIA,1.0
 I220619192,I4210123225,Valeo (France),Ruhr West University of Applied Sciences,company,education,Other,Other,1.0
 I220619192,I94509681,Valeo (France),Technische Universität Braunschweig,company,education,Other,Other,1.0
 I220619192,I39804081,Valeo (France),Sorbonne Université,company,education,Other,Other,1.0
@@ -2672,6 +2747,8 @@ I241749,I4210107233,University of Cambridge,Language Science (South Korea),educa
 I241749,I4210149682,University of Cambridge,Biogen (Belgium),education,company,Other,Other,1.0
 I241749,I4210158342,University of Cambridge,Intel (United Kingdom),education,company,Other,Other,1.0
 I241749,I4210116219,University of Cambridge,Engineering Systems (United States),education,company,Other,Other,1.0
+I241749,RAW_COHERE,University of Cambridge,Cohere,education,company,Other,Cohere,1.0
+I241749,RAW_META,University of Cambridge,Meta AI,education,company,Other,Meta,1.0
 I241749,I4210095624,University of Cambridge,Alibaba Group (United States),education,company,Other,Other,1.0
 I241749,I4210107473,University of Cambridge,SGS (China),education,company,Other,Other,1.0
 I241749,I4210166406,University of Cambridge,Quantum Technologies (Sweden),education,company,Other,Other,1.0
@@ -2689,6 +2766,7 @@ I241749,I889804353,University of Cambridge,Robert Bosch (Germany),education,comp
 I24185976,I4210128910,Sichuan University,Group Sense (China),education,company,Other,Other,1.0
 I24185976,I4210135459,Sichuan University,United Imaging Healthcare (China),education,company,Other,Other,1.0
 I24185976,I4401726805,Sichuan University,Megvii (China),education,company,Other,Other,3.0
+I24185976,RAW_NVIDIA,Sichuan University,NVIDIA,education,company,Other,NVIDIA,1.0
 I24185976,I4210158968,Sichuan University,C & L Instruments (United States),education,company,Other,Other,1.0
 I24185976,I4210137137,Sichuan University,Tianma Microelectronics (China),education,company,Other,Other,1.0
 I24185976,I4210108778,Sichuan University,Fresenius (Germany),education,company,Other,Other,1.0
@@ -2741,6 +2819,7 @@ I25355098,I4210094459,Chang'an University,Craft Group (China),education,company,
 I254029264,I4210153905,European University Viadrina,Data Power Decisions (United States),education,company,Other,Other,1.0
 I254181534,I4210123225,ZF Friedrichshafen (Germany),Ruhr West University of Applied Sciences,company,education,Other,Other,1.0
 I254181534,I94509681,ZF Friedrichshafen (Germany),Technische Universität Braunschweig,company,education,Other,Other,1.0
+I25846049,RAW_MICROSOFT,National Tsing Hua University,Microsoft Research,education,company,Other,Microsoft,1.0
 I25974101,I4210102029,University of Würzburg,AstroTec Holding (Netherlands),education,company,Other,Other,1.0
 I25974101,I4210131439,University of Würzburg,Applied Mathematics (United States),education,company,Other,Other,1.0
 I25974101,I4210143820,University of Würzburg,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
@@ -2770,6 +2849,7 @@ I27357992,I4210115038,Dalian University of Technology,Huawei Technologies (Canad
 I27357992,I4210091156,Dalian University of Technology,SAIC-GM (China),education,company,Other,Other,1.0
 I27357992,I4210110242,Dalian University of Technology,Digital Science (United States),education,company,Other,Other,1.0
 I2746051580,I4210114444,Université Paris Sciences et Lettres,Meta (United States),education,company,Other,Other,1.0
+I2746051580,RAW_META,Université Paris Sciences et Lettres,Meta AI,education,company,Other,Meta,2.0
 I2746051580,I4210102029,Université Paris Sciences et Lettres,AstroTec Holding (Netherlands),education,company,Other,Other,1.0
 I2746051580,I4210131439,Université Paris Sciences et Lettres,Applied Mathematics (United States),education,company,Other,Other,1.0
 I2746051580,I4210143820,Université Paris Sciences et Lettres,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
@@ -2778,8 +2858,10 @@ I27577105,I4210116480,University College Cork,Flanders Make (Belgium),education,
 I27599042,I4210107260,Xi'an Polytechnic University,Apple (United Kingdom),education,company,Other,Apple,1.0
 I27674431,I4210087596,Indian Institute of Technology Gandhinagar,Qualcomm (United States),education,company,Other,Other,1.0
 I277688954,I4210114444,Université Paris-Saclay,Meta (United States),education,company,Other,Other,1.0
+I277688954,RAW_META,Université Paris-Saclay,Meta AI,education,company,Other,Meta,3.0
 I277688954,I4210127875,Université Paris-Saclay,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I277688954,I60922564,Université Paris-Saclay,Naver (South Korea),education,company,Other,Other,1.0
+I277688954,RAW_HUGGING_FACE,Université Paris-Saclay,Hugging Face,education,company,Other,Hugging Face,1.0
 I277688954,I4210153546,Université Paris-Saclay,Flatiron Health (United States),education,company,Other,Other,1.0
 I277688954,I4210091812,Université Paris-Saclay,Bristol-Myers Squibb (United States),education,company,Other,Other,1.0
 I277688954,I4210137756,Université Paris-Saclay,Oxford Applied Research (United Kingdom),education,company,Other,Other,1.0
@@ -2828,11 +2910,14 @@ I2800289440,I4210155268,Columbia Southern University,Salesforce (United States),
 I2800372957,I50760025,China Electronics Technology Group Corporation,Hangzhou Dianzi University,company,education,Other,Other,2.0
 I2800403580,I4210150894,University of Minnesota System,Jacobs (United States),education,company,Other,Other,1.0
 I2800403580,I4210089985,University of Minnesota System,Amazon (Germany),education,company,Other,Amazon,1.0
+I2800444561,RAW_META,Atlanta Technical College,Meta AI,education,company,Other,Meta,1.0
+I2800565835,RAW_NVIDIA,Princeton Public Schools,NVIDIA,education,company,Other,NVIDIA,1.0
 I28006308,I4210113369,Shandong Normal University,Microsoft Research Asia (China),education,company,Other,Microsoft,1.0
 I2800717037,I4210127875,University of Florida Health,Nvidia (United States),education,company,Other,NVIDIA,4.0
 I2800808753,I34352273,Thales (Netherlands),Maastricht University,company,education,Other,Other,1.0
 I2800808753,I35440088,Thales (Netherlands),ETH Zurich,company,education,Other,Other,1.0
 I2800817003,I4210105678,California Southern University,Microsoft (Finland),education,company,Other,Microsoft,1.0
+I2800817003,RAW_NVIDIA,California Southern University,NVIDIA,education,company,Other,NVIDIA,2.0
 I2800817003,I4210090411,California Southern University,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
 I2800817003,I4210108547,California Southern University,EarthTech International (United States),education,company,Other,Other,1.0
 I2800817003,I4210136069,California Southern University,DryScrub (United States),education,company,Other,Other,1.0
@@ -2844,7 +2929,9 @@ I2801097182,I4210131439,Parc Científic de la Universitat de València,Applied M
 I2801097182,I4210143820,Parc Científic de la Universitat de València,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
 I2801097182,I4210153546,Parc Científic de la Universitat de València,Flatiron Health (United States),education,company,Other,Other,1.0
 I2801138614,I4210165038,Cascades (Canada),University of Chinese Academy of Sciences,company,education,Other,Other,1.0
+I2801151526,RAW_META,Brandman University,Meta AI,education,company,Other,Meta,1.0
 I2801151526,I4210125051,Brandman University,Microsoft (Israel),education,company,Other,Microsoft,1.0
+I2801187875,RAW_META,University College Lahore,Meta AI,education,company,Other,Meta,1.0
 I2801281511,I4210111298,University of HKBP Nommensen,Logistics Management Institute (United States),education,company,Other,Other,1.0
 I2801356230,I31746571,Thales (Australia),UNSW Sydney,company,education,Other,Other,1.0
 I2801572250,I4210110242,Jacksonville College,Digital Science (United States),education,company,Other,Other,1.0
@@ -2895,6 +2982,7 @@ I28407311,I4210140114,University of Manchester,Scripps (United States),education
 I28407311,I62885914,University of Manchester,Universidade Federal do Amazonas,education,company,Other,Amazon,1.0
 I28407311,I4210116328,University of Manchester,Precision for Medicine (United States),education,company,Other,Other,1.0
 I28777354,I4210139352,Sejong University,Hyundai Engineering (South Korea),education,company,Other,Other,1.0
+I28777354,RAW_XAI,Sejong University,xAI,education,company,Other,xAI,1.0
 I292141241,I4210110242,Munich School of Philosophy,Digital Science (United States),education,company,Other,Other,1.0
 I29739308,I4210135132,Guangxi Normal University,Cambridge University Press,education,company,Other,Other,1.0
 I301324184,I4210129030,Xavier School of Management,American Metal Processing (United States),education,company,Other,Other,1.0
@@ -2964,10 +3052,12 @@ I32971472,I4210131439,Yale University,Applied Mathematics (United States),educat
 I32971472,I4210143820,Yale University,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
 I32971472,I4210153546,Yale University,Flatiron Health (United States),education,company,Other,Other,1.0
 I32971472,I4387154989,Yale University,Hugging Face,education,company,Other,Hugging Face,1.0
+I32971472,RAW_HUGGING_FACE,Yale University,Hugging Face,education,company,Other,Hugging Face,2.0
 I32971472,I4210127875,Yale University,Nvidia (United States),education,company,Other,NVIDIA,1.0
 I32971472,I60922564,Yale University,Naver (South Korea),education,company,Other,Other,1.0
 I32971472,I4210155268,Yale University,Salesforce (United States),education,company,Other,Other,1.0
 I32971472,I4210167039,Yale University,ServiceNow (United States),education,company,Other,Other,1.0
+I32971472,RAW_META,Yale University,Meta AI,education,company,Other,Meta,1.0
 I32971472,I4210128910,Yale University,Group Sense (China),education,company,Other,Other,1.0
 I32971472,I4210117418,Yale University,Babraham Bioscience Technologies (United Kingdom),education,company,Other,Other,1.0
 I32971472,I4210100528,Yale University,ENN (China),education,company,Other,Other,1.0
@@ -2984,6 +3074,7 @@ I33849332,I4210102029,University of Malaya,AstroTec Holding (Netherlands),educat
 I33849332,I4210131439,University of Malaya,Applied Mathematics (United States),education,company,Other,Other,1.0
 I33849332,I4210143820,University of Malaya,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
 I33849332,I4210153546,University of Malaya,Flatiron Health (United States),education,company,Other,Other,1.0
+I33849332,RAW_MICROSOFT,University of Malaya,Microsoft Research,education,company,Other,Microsoft,1.0
 I33858575,I4210161436,Nagoya City University,Neurotrack Technologies (United States),education,company,Other,Other,1.0
 I33858575,I4210117980,Nagoya City University,Health Biomed (China),education,company,Other,Other,1.0
 I34352273,I4210164862,Maastricht University,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,4.0
@@ -2996,7 +3087,9 @@ I34809795,I4210108778,Medizinische Hochschule Hannover,Fresenius (Germany),educa
 I34949971,I4210144143,University of Jinan,Inspur (China),education,company,Other,Other,1.0
 I35364215,I4210128994,Naval Postgraduate School,In-Situ (United States),education,company,Other,Other,1.0
 I35440088,I4210090411,ETH Zurich,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,1.0
+I35440088,RAW_META,ETH Zurich,Meta AI,education,company,Other,Meta,1.0
 I35440088,I4210137357,ETH Zurich,Walt Disney (Switzerland),education,company,Other,Other,2.0
+I35440088,RAW_NVIDIA,ETH Zurich,NVIDIA,education,company,Other,NVIDIA,1.0
 I35440088,I4210105402,ETH Zurich,Vaxess Technologies (United States),education,company,Other,Other,1.0
 I35440088,I4210140114,ETH Zurich,Scripps (United States),education,company,Other,Other,1.0
 I35440088,I4210159102,ETH Zurich,Huawei Technologies (Sweden),education,company,Other,Other,1.0
@@ -3046,6 +3139,7 @@ I36788626,I4210132327,California University of Pennsylvania,Synaptic Research (U
 I36788626,I4210151850,California University of Pennsylvania,SC Johnson (United States),education,company,Other,Other,1.0
 I36788626,I4210142583,California University of Pennsylvania,Snap (United States),education,company,Other,Other,1.0
 I36788626,I4210107260,California University of Pennsylvania,Apple (United Kingdom),education,company,Other,Apple,1.0
+I36788626,RAW_NVIDIA,California University of Pennsylvania,NVIDIA,education,company,Other,NVIDIA,1.0
 I36788626,I4210160977,California University of Pennsylvania,Health Decisions (United States),education,company,Other,Other,1.0
 I37461747,I4210143161,Wuhan University,IDEX Corporation (United States),education,company,Other,Other,1.0
 I37461747,I72427458,Wuhan University,JDSU (United States),education,company,Other,Other,1.0
@@ -3085,6 +3179,7 @@ I39555362,I4210109704,University of Warwick,Bio Signal Group (United States),edu
 I39555362,I4210138066,University of Warwick,Insilixa (United States),education,company,Other,Other,1.0
 I39555362,I4387154989,University of Warwick,Hugging Face,education,company,Other,Hugging Face,1.0
 I39555362,I889804353,University of Warwick,Robert Bosch (Germany),education,company,Other,Other,1.0
+I39804081,RAW_META,Sorbonne Université,Meta AI,education,company,Other,Meta,3.0
 I39804081,I4210102029,Sorbonne Université,AstroTec Holding (Netherlands),education,company,Other,Other,1.0
 I39804081,I4210131439,Sorbonne Université,Applied Mathematics (United States),education,company,Other,Other,1.0
 I39804081,I4210143820,Sorbonne Université,Atmospheric and Space Technology Research Associates (United States),education,company,Other,Other,1.0
@@ -3107,6 +3202,8 @@ I40120149,I4210133785,University of Oxford,Rehab-Robotics (China),education,comp
 I40120149,I4210088273,University of Oxford,Align Technology (United States),education,company,Other,Other,1.0
 I40120149,I4210110431,University of Oxford,Microsoft (Netherlands),education,company,Other,Microsoft,2.0
 I40120149,I4210113297,University of Oxford,Google (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,3.0
+I40120149,RAW_COHERE,University of Oxford,Cohere,education,company,Other,Cohere,1.0
+I40120149,RAW_META,University of Oxford,Meta AI,education,company,Other,Meta,2.0
 I40120149,I4210090411,University of Oxford,Google DeepMind (United Kingdom),education,company,Other,Google / Google DeepMind / DeepMind,2.0
 I40120149,I4210143272,University of Oxford,Camber Collective (United States),education,company,Other,Other,1.0
 I40120149,I4210166406,University of Oxford,Quantum Technologies (Sweden),education,company,Other,Other,1.0
@@ -3132,6 +3229,7 @@ I40347166,I70745867,University of Chicago,KLA (United States),education,company,
 I40347166,I4210149682,University of Chicago,Biogen (Belgium),education,company,Other,Other,1.0
 I40347166,I4210153468,University of Chicago,Microsoft (Canada),education,company,Other,Microsoft,1.0
 I40347166,I4210127875,University of Chicago,Nvidia (United States),education,company,Other,NVIDIA,3.0
+I40347166,RAW_NVIDIA,University of Chicago,NVIDIA,education,company,Other,NVIDIA,1.0
 I40347166,I4210105402,University of Chicago,Vaxess Technologies (United States),education,company,Other,Other,1.0
 I40347166,I4210164937,University of Chicago,Microsoft Research (United Kingdom),education,company,Other,Microsoft,2.0
 I40347166,I4210163771,University of Chicago,Tableau Software (United States),education,company,Other,Other,1.0
@@ -3147,6 +3245,7 @@ I41198531,I4210120238,Nanjing University of Posts and Telecommunications,PowerCh
 I41198531,I4210135979,Nanjing University of Posts and Telecommunications,Yangtze River Pharmaceutical Group (China),education,company,Other,Other,1.0
 I41198531,I4210136246,Nanjing University of Posts and Telecommunications,China Telecom (China),education,company,Other,Other,2.0
 I41198531,I4210094487,Nanjing University of Posts and Telecommunications,Intel (Germany),education,company,Other,Other,1.0
+I4210085930,RAW_META,Heriot-Watt University Malaysia,Meta AI,education,company,Other,Meta,1.0
 I4210086143,I99065089,Alibaba Group (Cayman Islands),Tsinghua University,company,education,Other,Other,2.0
 I4210086143,I76130692,Alibaba Group (Cayman Islands),Zhejiang University,company,education,Other,Other,1.0
 I4210086710,I4210113369,Beijing Academy of Social Sciences,Microsoft Research Asia (China),education,company,Other,Microsoft,1.0
@@ -3327,6 +3426,7 @@ I4210098582,I9842412,ZTE (China),Nanjing University of Aeronautics and Astronaut
 I4210098582,I889458895,ZTE (China),University of Hong Kong,company,education,Other,Other,1.0
 I4210098776,I4210099336,Lawrie Technology (United States),Menlo School,company,education,Other,Other,1.0
 I4210098776,I60134161,Lawrie Technology (United States),Nagoya University,company,education,Other,Other,1.0
+I4210099336,RAW_META,Menlo School,Meta AI,education,company,Other,Meta,3.0
 I4210099672,I74973139,Accenture (United States),Carnegie Mellon University,company,education,Other,Other,1.0
 I4210099679,I57206974,Protein Express (United States),New York University,company,education,Other,Other,1.0
 I4210099679,I63966007,Protein Express (United States),Massachusetts Institute of Technology,company,education,Other,Other,1.0
@@ -3373,6 +3473,7 @@ I4210102840,I889458895,Ubiquitous Energy (United States),University of Hong Kong
 I4210103174,I8692664,EA Technology,University of Oklahoma,company,education,Other,Other,1.0
 I4210103174,I929597975,EA Technology,National University of Sciences and Technology,company,education,Other,Other,1.0
 I4210103330,I4210114444,École Normale Supérieure,Meta (United States),education,company,Other,Other,1.0
+I4210103330,RAW_META,École Normale Supérieure,Meta AI,education,company,Other,Meta,2.0
 I4210103786,I4210121800,"National University Cancer Institute, Singapore",Chan Zuckerberg Initiative (United States),education,company,Other,Other,1.0
 I4210103820,I78577930,Autodesk (Canada),Columbia University,company,education,Other,Other,1.0
 I4210103820,I54009628,Autodesk (Canada),University of Bayreuth,company,education,Other,Other,1.0
@@ -3594,7 +3695,9 @@ I4210113480,I4210153546,Mohamed bin Zayed University of Artificial Intelligence,
 I4210113480,I4210164862,Mohamed bin Zayed University of Artificial Intelligence,Artificial Intelligence in Medicine (Canada),education,company,Other,Other,1.0
 I4210113480,I4210145812,Mohamed bin Zayed University of Artificial Intelligence,Cancer Genetics (United States),education,company,Other,Other,2.0
 I4210113480,I4210164937,Mohamed bin Zayed University of Artificial Intelligence,Microsoft Research (United Kingdom),education,company,Other,Microsoft,1.0
+I4210113480,RAW_META,Mohamed bin Zayed University of Artificial Intelligence,Meta AI,education,company,Other,Meta,1.0
 I4210113480,I45928872,Mohamed bin Zayed University of Artificial Intelligence,Alibaba Group (China),education,company,Other,Other,1.0
+I4210113480,RAW_MICROSOFT,Mohamed bin Zayed University of Artificial Intelligence,Microsoft Research,education,company,Other,Microsoft,1.0
 I4210113490,I55732556,Infotec (United Kingdom),Arizona State University,company,education,Other,Other,1.0
 I4210113490,I887064364,Infotec (United Kingdom),University of Amsterdam,company,education,Other,Other,1.0
 I4210113490,I95457486,Infotec (United Kingdom),"University of California, Berkeley",company,education,Other,Other,1.0
@@ -3655,6 +3758,7 @@ I4210118524,I4210153546,Université Bourgogne Franche-Comté,Flatiron Health (Un
 I4210118951,I81365321,Craft Engineering Associates (United States),Old Dominion University,company,education,Other,Other,1.0
 I4210119021,I76130692,Hundsun (China),Zhejiang University,company,education,Other,Other,1.0
 I4210119109,I4400600948,Indiana University Bloomington,Microsoft Research New England (United States),education,company,Other,Microsoft,1.0
+I4210119109,RAW_META,Indiana University Bloomington,Meta AI,education,company,Other,Meta,1.0
 I4210119272,I76569877,AET (United States),Southeast University,company,education,Other,Other,1.0
 I4210119272,I99065089,AET (United States),Tsinghua University,company,education,Other,Other,1.0
 I4210119461,I95457486,Convergent Science (United States),"University of California, Berkeley",company,education,Other,Other,1.0
@@ -4306,7 +4410,12 @@ I4401726920,I99065089,Aibee (China),Tsinghua University,company,education,Other,
 I4402554038,I58610484,Microsoft Research Montréal (Canada),Seattle University,company,education,Microsoft,Other,1.0
 I4403386549,I863488634,Munich Center for Machine Learning,Coherent (United States),education,company,Other,Cohere,1.0
 I4403386650,I60922564,Centre de Robotique,Naver (South Korea),education,company,Other,Other,1.0
+I4403386650,RAW_HUGGING_FACE,Centre de Robotique,Hugging Face,education,company,Other,Hugging Face,1.0
+I45084792,RAW_NVIDIA,University of Florence,NVIDIA,education,company,Other,NVIDIA,1.0
+I45129253,RAW_META,University College London,Meta AI,education,company,Other,Meta,2.0
+I45129253,RAW_COHERE,University College London,Cohere,education,company,Other,Cohere,1.0
 I45129253,I889804353,University College London,Robert Bosch (Germany),education,company,Other,Other,1.0
+I4577782,RAW_XAI,Technische Universität Berlin,xAI,education,company,Other,xAI,1.0
 I45928872,I99065089,Alibaba Group (China),Tsinghua University,company,education,Other,Other,4.0
 I45928872,I63966007,Alibaba Group (China),Massachusetts Institute of Technology,company,education,Other,Other,1.0
 I45928872,I76569877,Alibaba Group (China),Southeast University,company,education,Other,Other,1.0
@@ -4320,10 +4429,18 @@ I45928872,I55712492,Alibaba Group (China),Zhejiang University of Technology,comp
 I45928872,I889458895,Alibaba Group (China),University of Hong Kong,company,education,Other,Other,5.0
 I45928872,I6469544,Alibaba Group (China),City University of Macau,company,education,Other,Other,1.0
 I45928872,I78988378,Alibaba Group (China),Renmin University of China,company,education,Other,Other,1.0
+I4654613,RAW_XAI,University of Warsaw,xAI,education,company,Other,xAI,1.0
+I4654613,RAW_MICROSOFT,University of Warsaw,Microsoft Research,education,company,Other,Microsoft,1.0
 I47251452,I98301712,Wake Forest University,Baidu (China),education,company,Other,Other,1.0
 I47508984,I61822063,Imperial College London,ICF International (United States),education,company,Other,Other,1.0
+I47508984,RAW_META,Imperial College London,Meta AI,education,company,Other,Meta,1.0
+I47508984,RAW_NVIDIA,Imperial College London,NVIDIA,education,company,Other,NVIDIA,1.0
 I47720641,I51629411,Huazhong University of Science and Technology,Siemens (China),education,company,Other,Other,1.0
+I47720641,RAW_MICROSOFT,Huazhong University of Science and Technology,Microsoft Research,education,company,Other,Microsoft,1.0
+I48379061,RAW_MICROSOFT,Shahid Beheshti University,Microsoft Research,education,company,Other,Microsoft,1.0
 I48430043,I889804353,Institut National des Sciences Appliquées de Lyon,Robert Bosch (Germany),education,company,Other,Other,1.0
+I5023651,RAW_META,McGill University,Meta AI,education,company,Other,Meta,1.0
+I50760025,RAW_STABILITY_AI,Hangzhou Dianzi University,Stability AI,education,company,Other,Stability AI,1.0
 I5124864,I873043661,École Polytechnique Fédérale de Lausanne,Voith (United States),education,company,Other,Other,1.0
 I5124864,I889804353,École Polytechnique Fédérale de Lausanne,Robert Bosch (Germany),education,company,Other,Other,1.0
 I51629411,I76569877,Siemens (China),Southeast University,company,education,Other,Other,1.0
@@ -4331,15 +4448,23 @@ I51629411,I79576946,Siemens (China),University of Pennsylvania,company,education
 I51713134,I72509657,University of Colorado Anschutz Medical Campus,Epic Systems (United States),education,company,Other,Other,4.0
 I522815984,I89264055,Robert Gordon University,MIRA (United Kingdom),education,company,Other,Other,1.0
 I52710748,I889804353,Charles R. Drew University of Medicine and Science,Robert Bosch (Germany),education,company,Other,Other,1.0
+I53964585,RAW_NVIDIA,Weizmann Institute of Science,NVIDIA,education,company,Other,NVIDIA,1.0
 I54009628,I889804353,University of Bayreuth,Robert Bosch (Germany),education,company,Other,Other,1.0
 I55143463,I70745867,University of Turin,KLA (United States),education,company,Other,Other,1.0
+I55732556,RAW_META,Arizona State University,Meta AI,education,company,Other,Meta,1.0
 I5626980,I74973139,Enamine (Ukraine),Carnegie Mellon University,company,education,Other,Other,1.0
 I56303344,I70387731,Aselsan (Turkey),Amasya Üniversitesi,company,education,Other,Other,1.0
 I56303344,I66514158,Aselsan (Turkey),Hacettepe University,company,education,Other,Other,1.0
+I56590836,RAW_META,Monash University,Meta AI,education,company,Other,Meta,1.0
+I56590836,RAW_NVIDIA,Monash University,NVIDIA,education,company,Other,NVIDIA,1.0
+I57206974,RAW_META,New York University,Meta AI,education,company,Other,Meta,4.0
+I58610484,RAW_MICROSOFT,Seattle University,Microsoft Research,education,company,Other,Microsoft,1.0
+I58956616,RAW_XAI,Case Western Reserve University,xAI,education,company,Other,xAI,1.0
 I58957048,I74973139,Yandex (Russia),Carnegie Mellon University,company,education,Other,Other,1.0
 I59028903,I98301712,Ocean University of China,Baidu (China),education,company,Other,Other,1.0
 I59553526,I869089601,Stony Brook University,Netflix (United States),education,company,Other,Other,1.0
 I60158472,I929267784,Concordia University,WSP (Canada),education,company,Other,Other,1.0
+I60668342,RAW_MICROSOFT,University of Regensburg,Microsoft Research,education,company,Other,Microsoft,1.0
 I60922564,I887064364,Naver (South Korea),University of Amsterdam,company,education,Other,Other,1.0
 I60922564,I98677209,Naver (South Korea),University of Edinburgh,company,education,Other,Other,1.0
 I60922564,I99065089,Naver (South Korea),Tsinghua University,company,education,Other,Other,1.0
@@ -4347,39 +4472,85 @@ I60922564,I74973139,Naver (South Korea),Carnegie Mellon University,company,educa
 I60922564,I95457486,Naver (South Korea),"University of California, Berkeley",company,education,Other,Other,1.0
 I60922564,I77079311,Naver (South Korea),Wonkwang University,company,education,Other,Other,1.0
 I61822063,I95457486,ICF International (United States),"University of California, Berkeley",company,education,Other,Other,1.0
+I62916508,RAW_NVIDIA,Technical University of Munich,NVIDIA,education,company,Other,NVIDIA,1.0
+I63190737,RAW_NVIDIA,"University at Buffalo, State University of New York",NVIDIA,education,company,Other,NVIDIA,1.0
 I63843962,I73142707,National Infrastructures for Research and Technology -  GRNET S.A,Athens University of Economics and Business,company,education,Other,Other,1.0
 I63843962,I71999127,National Infrastructures for Research and Technology -  GRNET S.A,Universitat de Barcelona,company,education,Other,Other,1.0
+I63966007,RAW_META,Massachusetts Institute of Technology,Meta AI,education,company,Other,Meta,2.0
 I63966007,I917207718,Massachusetts Institute of Technology,Toyota Industries (United States),education,company,Other,Other,2.0
+I66752286,RAW_XAI,University of Milano-Bicocca,xAI,education,company,Other,xAI,1.0
+I66862912,RAW_MICROSOFT,Chalmers University of Technology,Microsoft Research,education,company,Other,Microsoft,1.0
+I66946132,RAW_NVIDIA,"University of Maryland, College Park",NVIDIA,education,company,Other,NVIDIA,1.0
+I66946132,RAW_META,"University of Maryland, College Park",Meta AI,education,company,Other,Meta,1.0
+I67009956,RAW_MICROSOFT,Iran University of Science and Technology,Microsoft Research,education,company,Other,Microsoft,1.0
+I68891433,RAW_META,Indian Institute of Technology Delhi,Meta AI,education,company,Other,Meta,1.0
 I70745867,I94509681,KLA (United States),Technische Universität Braunschweig,company,education,Other,Other,1.0
+I71209653,RAW_META,Bocconi University,Meta AI,education,company,Other,Meta,1.0
 I71920554,I81935515,King Abdullah University of Science and Technology,Network Rail,education,company,Other,Other,1.0
 I72427458,I75900474,JDSU (United States),Hubei University,company,education,Other,Other,1.0
 I74319210,I74760111,Chitkara University,Texas Instruments (United States),education,company,Other,Other,1.0
 I74760111,I79161377,Texas Instruments (United States),Punjabi University,company,education,Other,Other,1.0
 I74760111,I876193797,Texas Instruments (United States),Vellore Institute of Technology University,company,education,Other,Other,1.0
+I74801974,RAW_META,The University of Tokyo,Meta AI,education,company,Other,Meta,1.0
+I74973139,RAW_META,Carnegie Mellon University,Meta AI,education,company,Other,Meta,2.0
 I74973139,I97750245,Carnegie Mellon University,Software (Spain),education,company,Other,Other,1.0
 I74973139,I917207718,Carnegie Mellon University,Toyota Industries (United States),education,company,Other,Other,1.0
 I75381157,I886582847,Wilfrid Laurier University,Western Forest Products,education,company,Other,Other,1.0
 I76130692,I98301712,Zhejiang University,Baidu (China),education,company,Other,Other,2.0
+I76134821,RAW_NVIDIA,Medical University of Vienna,NVIDIA,education,company,Other,NVIDIA,1.0
 I76198965,I889804353,Friedrich Schiller University Jena,Robert Bosch (Germany),education,company,Other,Other,1.0
 I78559203,I90965887,FedEx (United States),SUNY Polytechnic Institute,company,education,Other,Other,1.0
+I78988378,RAW_MICROSOFT,Renmin University of China,Microsoft Research,education,company,Other,Microsoft,1.0
 I78988378,I98301712,Renmin University of China,Baidu (China),education,company,Other,Other,1.0
 I79156528,I874769580,Universiti Tenaga Nasional,Tenaga Nasional Berhad (Malaysia),education,company,Other,Other,1.0
+I79620101,RAW_NVIDIA,University of Arkansas for Medical Sciences,NVIDIA,education,company,Other,NVIDIA,1.0
 I80538482,I97750245,Harran University,Software (Spain),education,company,Other,Other,1.0
 I81935515,I97018004,Network Rail,Stanford University,company,education,Other,Other,1.0
 I81935515,I98677209,Network Rail,University of Edinburgh,company,education,Other,Other,1.0
+I8204097,RAW_STABILITY_AI,Ludwig-Maximilians-Universität München,Stability AI,education,company,Other,Stability AI,1.0
+I8204097,RAW_NVIDIA,Ludwig-Maximilians-Universität München,NVIDIA,education,company,Other,NVIDIA,2.0
 I8204097,I863488634,Ludwig-Maximilians-Universität München,Coherent (United States),education,company,Other,Cohere,1.0
 I82767444,I97750245,Universidad de Málaga,Software (Spain),education,company,Other,Other,2.0
 I82880672,I98301712,Beihang University,Baidu (China),education,company,Other,Other,2.0
+I82951845,RAW_MICROSOFT,RMIT University,Microsoft Research,education,company,Other,Microsoft,1.0
+I84218800,RAW_STABILITY_AI,"University of California, Davis",Stability AI,education,company,Other,Stability AI,1.0
+I84218800,RAW_NVIDIA,"University of California, Davis",NVIDIA,education,company,Other,NVIDIA,1.0
 I84884186,I889804353,Newcastle University,Robert Bosch (Germany),education,company,Other,Other,1.0
 I861853513,I873043661,Sapienza University of Rome,Voith (United States),education,company,Other,Other,1.0
+I86519309,RAW_META,The University of Texas at Austin,Meta AI,education,company,Other,Meta,1.0
+I865915315,RAW_META,Vrije Universiteit Amsterdam,Meta AI,education,company,Other,Meta,1.0
+I86987016,RAW_NVIDIA,KTH Royal Institute of Technology,NVIDIA,education,company,Other,NVIDIA,1.0
+I87182695,RAW_ANTHROPIC,Universidad del Noreste,Anthropic,education,company,Other,Anthropic,1.0
+I87182695,RAW_META,Universidad del Noreste,Meta AI,education,company,Other,Meta,1.0
 I87216513,I98301712,Michigan State University,Baidu (China),education,company,Other,Other,2.0
 I87216513,I880747138,Michigan State University,Science Applications International Corporation (United States),education,company,Other,Other,1.0
 I873043661,I887064364,Voith (United States),University of Amsterdam,company,education,Other,Other,1.0
 I87445476,I98227222,Xi'an Jiaotong University,China National Petroleum Corporation (China),education,company,Other,Other,2.0
 I881766915,I98301712,Nanjing University,Baidu (China),education,company,Other,Other,3.0
+I887064364,RAW_HUGGING_FACE,University of Amsterdam,Hugging Face,education,company,Other,Hugging Face,1.0
+I887064364,RAW_META,University of Amsterdam,Meta AI,education,company,Other,Meta,2.0
+I887968799,RAW_MICROSOFT,RWTH Aachen University,Microsoft Research,education,company,Other,Microsoft,1.0
+I889458895,RAW_META,University of Hong Kong,Meta AI,education,company,Other,Meta,3.0
 I889458895,I98301712,University of Hong Kong,Baidu (China),education,company,Other,Other,7.0
+I889458895,RAW_MICROSOFT,University of Hong Kong,Microsoft Research,education,company,Other,Microsoft,1.0
 I889804353,I94509681,Robert Bosch (Germany),Technische Universität Braunschweig,company,education,Other,Other,1.0
 I889804353,I904495901,Robert Bosch (Germany),Ruhr University Bochum,company,education,Other,Other,1.0
 I889804353,I95457486,Robert Bosch (Germany),"University of California, Berkeley",company,education,Other,Other,1.0
 I889804353,I96673099,Robert Bosch (Germany),Technical University of Denmark,company,education,Other,Other,1.0
 I90610280,I98301712,South China University of Technology,Baidu (China),education,company,Other,Other,4.0
+I9224756,RAW_STABILITY_AI,Northeastern University,Stability AI,education,company,Other,Stability AI,1.0
+I92869138,RAW_XAI,BOKU University,xAI,education,company,Other,xAI,3.0
+I95457486,RAW_META,"University of California, Berkeley",Meta AI,education,company,Other,Meta,4.0
+I9617848,RAW_META,Universitat Politècnica de Catalunya,Meta AI,education,company,Other,Meta,1.0
+I97018004,RAW_HUGGING_FACE,Stanford University,Hugging Face,education,company,Other,Hugging Face,1.0
+I97018004,RAW_NVIDIA,Stanford University,NVIDIA,education,company,Other,NVIDIA,3.0
+I97018004,RAW_META,Stanford University,Meta AI,education,company,Other,Meta,3.0
+I97018004,RAW_MICROSOFT,Stanford University,Microsoft Research,education,company,Other,Microsoft,1.0
+I97018004,RAW_ANTHROPIC,Stanford University,Anthropic,education,company,Other,Anthropic,1.0
+I97018004,RAW_STABILITY_AI,Stanford University,Stability AI,education,company,Other,Stability AI,2.0
+I98677209,RAW_HUGGING_FACE,University of Edinburgh,Hugging Face,education,company,Other,Hugging Face,1.0
+I98677209,RAW_META,University of Edinburgh,Meta AI,education,company,Other,Meta,2.0
+I98677209,RAW_STABILITY_AI,University of Edinburgh,Stability AI,education,company,Other,Stability AI,1.0
+I99065089,RAW_HUGGING_FACE,Tsinghua University,Hugging Face,education,company,Other,Hugging Face,1.0
+I99065089,RAW_COHERE,Tsinghua University,Cohere,education,company,Other,Cohere,1.0
+I9927081,RAW_NVIDIA,Aalto University,NVIDIA,education,company,Other,NVIDIA,1.0

@@ -5,4 +5,4 @@ matplotlib>=3.7
 seaborn>=0.13
 PyYAML>=6.0
 python-louvain>=0.16
-
+igraph>=1.0

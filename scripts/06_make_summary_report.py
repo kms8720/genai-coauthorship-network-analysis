@@ -46,10 +46,23 @@ def make_report() -> None:
     top_inst_between = read_csv(OUTPUTS / "tables" / "top_institutions_betweenness.csv")
     mixing = read_csv(OUTPUTS / "tables" / "institution_type_edge_mixing.csv")
     methods = read_csv(OUTPUTS / "tables" / "centrality_method_summary.csv")
+    author_year = read_csv(OUTPUTS / "tables" / "author_year_affiliations.csv")
+    long_affils = read_csv(OUTPUTS / "tables" / "authorship_affiliations_long.csv")
+    mobility = read_csv(OUTPUTS / "tables" / "researcher_affiliation_changes.csv")
+    edge_mixing = read_csv(OUTPUTS / "tables" / "edge_type_mixing.csv")
+    cleaning_summary = {}
+    summary_path = DATA_PROCESSED / "cleaning_summary.json"
+    if summary_path.exists():
+        cleaning_summary = json.loads(summary_path.read_text(encoding="utf-8"))
 
     works_by_year = works["publication_year"].value_counts().sort_index().to_dict() if not works.empty else {}
     full_researcher = summary[(summary["network"] == "researcher") & (summary["year"].astype(str) == "full")]
     full_institution = summary[(summary["network"] == "institution") & (summary["year"].astype(str) == "full")]
+
+    no_observed = cleaning_summary.get("authors_with_no_observed_institution_metadata", "n/a")
+    raw_recovered = cleaning_summary.get("authors_with_raw_affiliation_recovered", "n/a")
+    multi_affils = cleaning_summary.get("authors_with_multiple_affiliations", "n/a")
+    category_changes = cleaning_summary.get("authors_with_category_changes_across_years", "n/a")
 
     report = f"""# Generative AI Research Ecosystem: Competition and Collaboration in Firm-University Coauthorship Networks
 
@@ -64,10 +77,24 @@ Is the generative AI research ecosystem organized as a closed firm-centered comp
 - Raw file: `data/raw/openalex_works_raw.jsonl`
 - Processed works: {len(works)}
 - Unique authors: {authorships['author_id'].nunique() if not authorships.empty else 0}
-- Unique institutions: {institutions['institution_id'].nunique() if not institutions.empty else 0}
+- Unique institutions, including conservative raw-affiliation recoveries: {institutions['institution_id'].nunique() if not institutions.empty else 0}
 - Works by year: `{json.dumps(works_by_year, ensure_ascii=False)}`
 
-Limitations: this sample-mode dataset depends on keyword search terms and OpenAlex affiliation metadata. Search terms may miss relevant papers that do not use the selected terminology, and affiliations can be incomplete or ambiguous.
+Limitations: this limited collection run depends on keyword search terms and OpenAlex affiliation metadata. Search terms may miss relevant papers that do not use the selected terminology.
+
+Author IDs are complete in the processed researcher table, but affiliation metadata is incomplete in OpenAlex. Some authors have structured OpenAlex institutions, some only have raw affiliation strings, and some have no observed institution metadata. Because researcher mobility and multi-affiliation are central to this project, the pipeline no longer uses one all-period modal institution as the main analytical affiliation. It now uses an author-year affiliation framework and keeps all observed affiliations for analysis.
+
+Affiliation metadata summary:
+
+- Authors with no observed institution metadata: {no_observed}
+- Authors with raw affiliation recovered by conservative rules: {raw_recovered}
+- Authors with multiple affiliations in at least one observed year: {multi_affils}
+- Authors with primary category changes across years: {category_changes}
+- Authorship-level affiliation rows: {len(long_affils)}
+- Author-year affiliation rows: {len(author_year)}
+- Researcher year-to-year mobility/change rows: {len(mobility)}
+
+Raw affiliation recovery is intentionally conservative and focuses on clearly named target AI firms such as OpenAI, Anthropic, Google DeepMind, Microsoft, NVIDIA, Cohere, Mistral AI, xAI, Stability AI, and Hugging Face.
 
 Betweenness centrality uses exact calculation when network size is feasible and sampling approximation only when node counts exceed `max_exact_betweenness_nodes` in `config.yaml`. Degree, weighted degree, and eigenvector centrality are calculated directly. Community labels use Louvain when available.
 
@@ -117,6 +144,10 @@ Top bridge institutions:
 
 {md_table(mixing[mixing['year'].astype(str) == 'full'] if not mixing.empty else mixing, ['category_pair', 'edge_count', 'edge_weight'], 20)}
 
+Additional edge mixing methods:
+
+{md_table(edge_mixing[edge_mixing['year'].astype(str) == 'full'] if not edge_mixing.empty else edge_mixing, ['method', 'category_pair', 'edge_count', 'edge_weight'], 30)}
+
 ## Evidence Related to Hypotheses
 
 - H1. Partial firm-centered clustering: inspect `target_firm_label`, community labels, and institution network figures. A supported claim requires visible firm-centered communities plus cross-community links.
@@ -129,6 +160,7 @@ Top bridge institutions:
 
 - Top bridge researchers' career histories and affiliation changes.
 - Whether bridge roles come from researcher mobility, joint appointments, or large multi-institution papers.
+- Compare `outputs/tables/author_year_affiliations.csv` and `outputs/tables/researcher_affiliation_changes.csv` before making claims about mobility.
 - Institution classification rules in `institution_classification_rules.md`, especially ambiguous organizations.
 - Papers with large author lists that were excluded from pairwise researcher edges by the configurable threshold.
 
@@ -138,6 +170,10 @@ Top bridge institutions:
 - Network tables: `outputs/networks/`
 - Gephi files: `outputs/gephi/`
 - Metric tables: `outputs/tables/`
+- Authorship affiliation long table: `outputs/tables/authorship_affiliations_long.csv`
+- Author-year affiliation table: `outputs/tables/author_year_affiliations.csv`
+- Researcher affiliation changes: `outputs/tables/researcher_affiliation_changes.csv`
+- Edge mixing methods: `outputs/tables/edge_type_mixing.csv`
 - Figures: `outputs/figures/`
 - This report: `outputs/report/summary_report.md`
 - GitHub checklist: `outputs/report/github_upload_checklist.md`
@@ -180,6 +216,7 @@ python scripts/06_make_summary_report.py
 - `.env`
 - API keys or private credentials
 - Very large raw files such as `data/raw/openalex_works_raw.jsonl`
+- Very large generated graph files such as `outputs/gephi/researcher_full.gexf`
 - Python cache files and virtual environments
 
 ## Suggested Repository

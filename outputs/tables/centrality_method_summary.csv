@@ -1,11 +1,11 @@
 network,year,node_count,edge_count,betweenness_method,betweenness_k,max_exact_betweenness_nodes
 researcher,full,64934,312015,approximate_weighted_brandes_sampling,300,3000
-institution,full,7416,71371,exact_weighted_igraph,0,3000
+institution,full,7425,71650,exact_weighted_igraph,0,3000
 researcher,2022,16777,66924,approximate_weighted_brandes_sampling,300,3000
-institution,2022,3219,24360,exact_weighted_igraph,0,3000
+institution,2022,3226,24464,exact_weighted_igraph,0,3000
 researcher,2023,17455,85562,approximate_weighted_brandes_sampling,300,3000
-institution,2023,2602,15015,exact_weighted_igraph,0,3000
+institution,2023,2609,15091,exact_weighted_igraph,0,3000
 researcher,2024,21419,96424,approximate_weighted_brandes_sampling,300,3000
-institution,2024,2944,14960,exact_weighted_igraph,0,3000
+institution,2024,2951,15038,exact_weighted_igraph,0,3000
 researcher,2025,21782,89296,approximate_weighted_brandes_sampling,300,3000
-institution,2025,3818,24974,exact_weighted_igraph,0,3000
+institution,2025,3825,25038,exact_weighted_igraph,0,3000

@@ -3,10 +3,12 @@ from __future__ import annotations
 import json
 from typing import Any, Dict, List
 
+import itertools
+
 import networkx as nx
 import pandas as pd
 
-from common import OUTPUTS, ensure_dirs, load_config, semicolon_join
+from common import DATA_PROCESSED, OUTPUTS, ensure_dirs, load_config, semicolon_join
 
 
 def load_graph(kind: str, label: str) -> nx.Graph:
@@ -167,10 +169,82 @@ def institution_type_mixing(graph: nx.Graph, label: str) -> pd.DataFrame:
         cu = graph.nodes[u].get("simplified_institution_category", "unknown")
         cv = graph.nodes[v].get("simplified_institution_category", "unknown")
         a, b = sorted([str(cu), str(cv)])
-        rows.append({"year": label, "category_pair": f"{a}-{b}", "edge_count": 1, "edge_weight": data.get("weight", 1)})
+        rows.append({
+            "method": "institution_network_edges_paper_level_all_observed_affiliations",
+            "year": label,
+            "category_pair": f"{a}-{b}",
+            "edge_count": 1,
+            "edge_weight": data.get("weight", 1),
+        })
     if not rows:
-        return pd.DataFrame(columns=["year", "category_pair", "edge_count", "edge_weight"])
-    return pd.DataFrame(rows).groupby(["year", "category_pair"], as_index=False).sum()
+        return pd.DataFrame(columns=["method", "year", "category_pair", "edge_count", "edge_weight"])
+    return pd.DataFrame(rows).groupby(["method", "year", "category_pair"], as_index=False).sum()
+
+
+def category_pair(a: str, b: str) -> str:
+    x, y = sorted([str(a or "unknown"), str(b or "unknown")])
+    return f"{x}-{y}"
+
+
+def author_year_primary_edge_mixing(authorships: pd.DataFrame, author_year: pd.DataFrame) -> pd.DataFrame:
+    ay_lookup = {
+        (str(row["author_id"]), int(row["year"])): str(row.get("primary_category_for_display_this_year", "unknown") or "unknown")
+        for _, row in author_year.iterrows()
+    }
+    rows = []
+    for work_id, group in authorships.groupby("work_id"):
+        year = int(first) if (first := group["publication_year"].iloc[0]) != "" else 0
+        author_ids = sorted(set(str(a) for a in group["author_id"] if str(a) != ""))
+        if len(author_ids) < 2:
+            continue
+        for u, v in itertools.combinations(author_ids, 2):
+            rows.append(
+                {
+                    "method": "researcher_edges_author_year_primary_categories",
+                    "year": str(year),
+                    "category_pair": category_pair(
+                        ay_lookup.get((u, year), "unknown"),
+                        ay_lookup.get((v, year), "unknown"),
+                    ),
+                    "edge_count": 1,
+                    "edge_weight": 1,
+                }
+            )
+            rows.append(
+                {
+                    "method": "researcher_edges_author_year_primary_categories",
+                    "year": "full",
+                    "category_pair": rows[-1]["category_pair"],
+                    "edge_count": 1,
+                    "edge_weight": 1,
+                }
+            )
+    if not rows:
+        return pd.DataFrame(columns=["method", "year", "category_pair", "edge_count", "edge_weight"])
+    return pd.DataFrame(rows).groupby(["method", "year", "category_pair"], as_index=False).sum()
+
+
+def paper_level_observed_category_mixing(long_df: pd.DataFrame) -> pd.DataFrame:
+    rows = []
+    for work_id, group in long_df.groupby("work_id"):
+        year = str(int(group["publication_year"].iloc[0]))
+        categories = sorted(set(str(c or "unknown") for c in group["simplified_institution_category"]))
+        if not categories:
+            continue
+        pairs = [(categories[0], categories[0])] if len(categories) == 1 else itertools.combinations(categories, 2)
+        for a, b in pairs:
+            row = {
+                "method": "papers_all_observed_affiliation_categories",
+                "year": year,
+                "category_pair": category_pair(a, b),
+                "edge_count": 1,
+                "edge_weight": 1,
+            }
+            rows.append(row)
+            rows.append({**row, "year": "full"})
+    if not rows:
+        return pd.DataFrame(columns=["method", "year", "category_pair", "edge_count", "edge_weight"])
+    return pd.DataFrame(rows).groupby(["method", "year", "category_pair"], as_index=False).sum()
 
 
 def analyze() -> None:
@@ -222,6 +296,18 @@ def analyze() -> None:
     pd.concat(all_mixing, ignore_index=True).to_csv(
         OUTPUTS / "tables" / "institution_type_edge_mixing.csv", index=False
     )
+    authorships = pd.read_csv(DATA_PROCESSED / "authorships.csv").fillna("")
+    author_year = pd.read_csv(OUTPUTS / "tables" / "author_year_affiliations.csv").fillna("")
+    long_df = pd.read_csv(OUTPUTS / "tables" / "authorship_affiliations_long.csv").fillna("")
+    edge_mixing = pd.concat(
+        [
+            author_year_primary_edge_mixing(authorships, author_year),
+            paper_level_observed_category_mixing(long_df),
+            pd.concat(all_mixing, ignore_index=True),
+        ],
+        ignore_index=True,
+    )
+    edge_mixing.to_csv(OUTPUTS / "tables" / "edge_type_mixing.csv", index=False)
 
     top_specs = [
         (full_researcher_nodes, "degree_centrality", "top_researchers_degree.csv"),

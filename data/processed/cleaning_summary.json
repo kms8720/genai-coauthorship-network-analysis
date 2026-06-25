@@ -1,6 +1,11 @@
 {
   "processed_works": 16000,
-  "authorship_rows": 114778,
+  "authorship_rows": 114991,
+  "authorship_affiliation_rows": 84940,
   "unique_authors": 64934,
-  "unique_institutions": 7416
+  "unique_institutions": 7425,
+  "authors_with_no_observed_institution_metadata": 14888,
+  "authors_with_raw_affiliation_recovered": 436,
+  "authors_with_multiple_affiliations": 12966,
+  "authors_with_category_changes_across_years": 4700
 }

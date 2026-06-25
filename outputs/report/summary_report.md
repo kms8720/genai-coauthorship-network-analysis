@@ -11,10 +11,24 @@ Is the generative AI research ecosystem organized as a closed firm-centered comp
 - Raw file: `data/raw/openalex_works_raw.jsonl`
 - Processed works: 16000
 - Unique authors: 64934
-- Unique institutions: 7416
+- Unique institutions, including conservative raw-affiliation recoveries: 7425
 - Works by year: `{"2022": 3524, "2023": 4040, "2024": 4219, "2025": 4217}`
 
-Limitations: this sample-mode dataset depends on keyword search terms and OpenAlex affiliation metadata. Search terms may miss relevant papers that do not use the selected terminology, and affiliations can be incomplete or ambiguous.
+Limitations: this limited collection run depends on keyword search terms and OpenAlex affiliation metadata. Search terms may miss relevant papers that do not use the selected terminology.
+
+Author IDs are complete in the processed researcher table, but affiliation metadata is incomplete in OpenAlex. Some authors have structured OpenAlex institutions, some only have raw affiliation strings, and some have no observed institution metadata. Because researcher mobility and multi-affiliation are central to this project, the pipeline no longer uses one all-period modal institution as the main analytical affiliation. It now uses an author-year affiliation framework and keeps all observed affiliations for analysis.
+
+Affiliation metadata summary:
+
+- Authors with no observed institution metadata: 14888
+- Authors with raw affiliation recovered by conservative rules: 436
+- Authors with multiple affiliations in at least one observed year: 12966
+- Authors with primary category changes across years: 4700
+- Authorship-level affiliation rows: 84940
+- Author-year affiliation rows: 77433
+- Researcher year-to-year mobility/change rows: 12499
+
+Raw affiliation recovery is intentionally conservative and focuses on clearly named target AI firms such as OpenAI, Anthropic, Google DeepMind, Microsoft, NVIDIA, Cohere, Mistral AI, xAI, Stability AI, and Hugging Face.
 
 Betweenness centrality uses exact calculation when network size is feasible and sampling approximation only when node counts exceed `max_exact_betweenness_nodes` in `config.yaml`. Degree, weighted degree, and eigenvector centrality are calculated directly. Community labels use Louvain when available.
 
@@ -23,15 +37,15 @@ Centrality method summary:
 | network | year | node_count | edge_count | betweenness_method | betweenness_k |
 | --- | --- | --- | --- | --- | --- |
 | researcher | full | 64934 | 312015 | approximate_weighted_brandes_sampling | 300 |
-| institution | full | 7416 | 71371 | exact_weighted_igraph | 0 |
+| institution | full | 7425 | 71650 | exact_weighted_igraph | 0 |
 | researcher | 2022 | 16777 | 66924 | approximate_weighted_brandes_sampling | 300 |
-| institution | 2022 | 3219 | 24360 | exact_weighted_igraph | 0 |
+| institution | 2022 | 3226 | 24464 | exact_weighted_igraph | 0 |
 | researcher | 2023 | 17455 | 85562 | approximate_weighted_brandes_sampling | 300 |
-| institution | 2023 | 2602 | 15015 | exact_weighted_igraph | 0 |
+| institution | 2023 | 2609 | 15091 | exact_weighted_igraph | 0 |
 | researcher | 2024 | 21419 | 96424 | approximate_weighted_brandes_sampling | 300 |
-| institution | 2024 | 2944 | 14960 | exact_weighted_igraph | 0 |
+| institution | 2024 | 2951 | 15038 | exact_weighted_igraph | 0 |
 | researcher | 2025 | 21782 | 89296 | approximate_weighted_brandes_sampling | 300 |
-| institution | 2025 | 3818 | 24974 | exact_weighted_igraph | 0 |
+| institution | 2025 | 3825 | 25038 | exact_weighted_igraph | 0 |
 
 ## Researcher Network Summary
 
@@ -57,17 +71,17 @@ Full network:
 
 | network | year | node_count | edge_count | density | average_degree | connected_components | largest_component_size | share_nodes_largest_component |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| institution | full | 7416 | 71371 | 0.002595798044868 | 19.247842502696876 | 550 | 6680 | 0.9007551240560948 |
+| institution | full | 7425 | 71650 | 0.002599631371183 | 19.2996632996633 | 548 | 6692 | 0.9012794612794612 |
 
 Year-by-year:
 
 | network | year | node_count | edge_count | density | average_degree | connected_components | largest_component_size | share_nodes_largest_component |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| institution | full | 7416 | 71371 | 0.002595798044868 | 19.247842502696876 | 550 | 6680 | 0.9007551240560948 |
-| institution | 2022 | 3219 | 24360 | 0.004703273814523 | 15.135135135135137 | 359 | 2677 | 0.8316247281764523 |
-| institution | 2023 | 2602 | 15015 | 0.0044371865488972 | 11.541122213681785 | 350 | 2060 | 0.7916986933128363 |
-| institution | 2024 | 2944 | 14960 | 0.0034532937404895 | 10.16304347826087 | 328 | 2420 | 0.8220108695652174 |
-| institution | 2025 | 3818 | 24974 | 0.0034273623294535 | 13.08224201152436 | 323 | 3290 | 0.8617077003666841 |
+| institution | full | 7425 | 71650 | 0.002599631371183 | 19.2996632996633 | 548 | 6692 | 0.9012794612794612 |
+| institution | 2022 | 3226 | 24464 | 0.0047028744166822 | 15.166769993800372 | 360 | 2683 | 0.8316800991940484 |
+| institution | 2023 | 2609 | 15091 | 0.0044357427216313 | 11.568417018014564 | 347 | 2070 | 0.7934074357991567 |
+| institution | 2024 | 2951 | 15038 | 0.00345484725086 | 10.191799390037277 | 329 | 2426 | 0.8220942053541173 |
+| institution | 2025 | 3825 | 25038 | 0.0034235786364755 | 13.091764705882351 | 322 | 3299 | 0.862483660130719 |
 
 ## Centrality Results
 
@@ -82,9 +96,9 @@ Top degree researchers:
 | Tianming Liu | A5100647156 | University of Georgia | 0.0029876950087012 | 489.0 |
 | Yang Liu | A5100355692 | Nanyang Technological University | 0.0029568940292301 | 232.0 |
 | Xipeng Qiu | A5044665993 | Fudan University | 0.0028490906010811 | 316.0 |
-| Percy Liang | A5025255782 | Stanford University | 0.0028182896216099 | 278.0 |
-| Tien Yin Wong | A5072258594 | Singapore National Eye Center | 0.0027258866831965 | 238.0 |
-| Zhengliang Liu | A5101505879 | University of Georgia | 0.0027258866831965 | 442.0 |
+| Percy Liang | A5025255782 |  | 0.0028182896216099 | 278.0 |
+| Tien Yin Wong | A5072258594 | Tsinghua University | 0.0027258866831965 | 238.0 |
+| Zhengliang Liu | A5101505879 | Mayo Clinic Hospital | 0.0027258866831965 | 442.0 |
 
 Top betweenness researchers:
 
@@ -92,13 +106,13 @@ Top betweenness researchers:
 | --- | --- | --- | --- | --- |
 | Yu Qiao | A5100748135 | Shanghai Artificial Intelligence Laboratory | 0.0296560742710723 | 438.0 |
 | Ziwei Liu | A5100406050 | Nanyang Technological University | 0.0274707180449615 | 205.0 |
-| Dahua Lin | A5010087030 | Chinese University of Hong Kong | 0.0195374525129801 | 213.0 |
+| Dahua Lin | A5010087030 |  | 0.0195374525129801 | 213.0 |
 | Caiming Xiong | A5032046813 | Salesforce (United States) | 0.0181571498561954 | 231.0 |
-| Chunyuan Li | A5107893340 | Microsoft Research (United Kingdom) | 0.015758614627284 | 206.0 |
-| Percy Liang | A5025255782 | Stanford University | 0.0151324587446263 | 278.0 |
+| Chunyuan Li | A5107893340 | Microsoft (United States) | 0.015758614627284 | 206.0 |
+| Percy Liang | A5025255782 |  | 0.0151324587446263 | 278.0 |
 | Ji-Rong Wen | A5025631695 | Renmin University of China | 0.0138349263030129 | 316.0 |
-| Noah A. Smith | A5088517824 | University of Washington | 0.011965537373754 | 149.0 |
-| Jifeng Dai | A5026944066 | Shanghai Artificial Intelligence Laboratory | 0.0111455075437351 | 197.0 |
+| Noah A. Smith | A5088517824 |  | 0.011965537373754 | 149.0 |
+| Jifeng Dai | A5026944066 | Tsinghua University | 0.0111455075437351 | 197.0 |
 | Lichao Sun | A5015105117 | Lehigh University | 0.0108648322351541 | 154.0 |
 
 Top eigenvector researchers:
@@ -107,7 +121,7 @@ Top eigenvector researchers:
 | --- | --- | --- | --- | --- |
 | Jared Kaplan | A5053213601 |  | 0.223541731915177 | 385.0 |
 | Sam McCandlish | A5054887773 |  | 0.2105942596540665 | 329.0 |
-| Amanda Askell | A5030305998 | Saudi Heart Association | 0.2104217273369257 | 357.0 |
+| Amanda Askell | A5030305998 |  | 0.2104217273369257 | 357.0 |
 | Anna Chen | A5056436767 |  | 0.2027486182928939 | 313.0 |
 | Kamal Ndousse | A5028970835 |  | 0.2023991887150873 | 327.0 |
 | Yuntao Bai | A5091860006 |  | 0.2023717426947143 | 322.0 |
@@ -120,28 +134,28 @@ Top bridge institutions:
 
 | institution_name | institution_id | simplified_institution_category | target_firm_label | betweenness_centrality | weighted_degree |
 | --- | --- | --- | --- | --- | --- |
-| Stanford University | I97018004 | education | Other | 0.1957143470521797 | 1426.0 |
-| Harvard University | I136199984 | education | Other | 0.1430162018186441 | 1450.0 |
-| Tsinghua University | I99065089 | education | Other | 0.1404972533896318 | 1052.0 |
-| Chinese Academy of Sciences | I19820366 | government | Other | 0.0987189692767885 | 1220.0 |
-| University of Oxford | I40120149 | education | Other | 0.0914373090480965 | 1003.0 |
-| Massachusetts Institute of Technology | I63966007 | education | Other | 0.0708620995946392 | 933.0 |
-| Nanyang Technological University | I172675005 | education | Other | 0.0690628972860336 | 714.0 |
-| National University of Singapore | I165932596 | education | Other | 0.0687002324727467 | 816.0 |
-| University of Hong Kong | I889458895 | education | Other | 0.0631251464433831 | 861.0 |
-| Carnegie Mellon University | I74973139 | education | Other | 0.060980512796392 | 610.0 |
+| Stanford University | I97018004 | education | Other | 0.1965713087700567 | 1437.0 |
+| Harvard University | I136199984 | education | Other | 0.1432564151160435 | 1451.0 |
+| Tsinghua University | I99065089 | education | Other | 0.1404705051595482 | 1054.0 |
+| Chinese Academy of Sciences | I19820366 | government | Other | 0.098378643453548 | 1220.0 |
+| University of Oxford | I40120149 | education | Other | 0.0913890552409138 | 1006.0 |
+| Massachusetts Institute of Technology | I63966007 | education | Other | 0.0708810065925464 | 935.0 |
+| Nanyang Technological University | I172675005 | education | Other | 0.0689958693801842 | 714.0 |
+| National University of Singapore | I165932596 | education | Other | 0.0684531156695041 | 819.0 |
+| University of Hong Kong | I889458895 | education | Other | 0.0630369219592724 | 865.0 |
+| Carnegie Mellon University | I74973139 | education | Other | 0.0608090532165819 | 612.0 |
 
 ## Institution Type Mixing
 
 | category_pair | edge_count | edge_weight |
 | --- | --- | --- |
-| company-company | 439 | 606.0 |
-| company-education | 4384 | 5637.0 |
-| company-government | 201 | 235.0 |
-| company-healthcare | 597 | 706.0 |
-| company-nonprofit | 256 | 288.0 |
-| company-research_institute | 840 | 947.0 |
-| company-unknown | 176 | 211.0 |
+| company-company | 486 | 677.0 |
+| company-education | 4555 | 5872.0 |
+| company-government | 207 | 245.0 |
+| company-healthcare | 614 | 726.0 |
+| company-nonprofit | 266 | 302.0 |
+| company-research_institute | 863 | 974.0 |
+| company-unknown | 181 | 216.0 |
 | education-education | 27611 | 35871.0 |
 | education-government | 2660 | 3491.0 |
 | education-healthcare | 9394 | 12146.0 |
@@ -156,6 +170,41 @@ Top bridge institutions:
 | healthcare-healthcare | 2992 | 3601.0 |
 | healthcare-nonprofit | 631 | 754.0 |
 
+Additional edge mixing methods:
+
+| method | category_pair | edge_count | edge_weight |
+| --- | --- | --- | --- |
+| researcher_edges_author_year_primary_categories | company-company | 28262 | 28262.0 |
+| researcher_edges_author_year_primary_categories | company-education | 18969 | 18969.0 |
+| researcher_edges_author_year_primary_categories | company-government | 279 | 279.0 |
+| researcher_edges_author_year_primary_categories | company-healthcare | 1336 | 1336.0 |
+| researcher_edges_author_year_primary_categories | company-nonprofit | 791 | 791.0 |
+| researcher_edges_author_year_primary_categories | company-research_institute | 4009 | 4009.0 |
+| researcher_edges_author_year_primary_categories | company-unknown | 14938 | 14938.0 |
+| researcher_edges_author_year_primary_categories | education-education | 146193 | 146193.0 |
+| researcher_edges_author_year_primary_categories | education-government | 2238 | 2238.0 |
+| researcher_edges_author_year_primary_categories | education-healthcare | 14129 | 14129.0 |
+| researcher_edges_author_year_primary_categories | education-nonprofit | 4301 | 4301.0 |
+| researcher_edges_author_year_primary_categories | education-research_institute | 34147 | 34147.0 |
+| researcher_edges_author_year_primary_categories | education-unknown | 32521 | 32521.0 |
+| researcher_edges_author_year_primary_categories | government-government | 483 | 483.0 |
+| researcher_edges_author_year_primary_categories | government-healthcare | 141 | 141.0 |
+| researcher_edges_author_year_primary_categories | government-nonprofit | 52 | 52.0 |
+| researcher_edges_author_year_primary_categories | government-research_institute | 1572 | 1572.0 |
+| researcher_edges_author_year_primary_categories | government-unknown | 475 | 475.0 |
+| researcher_edges_author_year_primary_categories | healthcare-healthcare | 7427 | 7427.0 |
+| researcher_edges_author_year_primary_categories | healthcare-nonprofit | 503 | 503.0 |
+| researcher_edges_author_year_primary_categories | healthcare-research_institute | 2232 | 2232.0 |
+| researcher_edges_author_year_primary_categories | healthcare-unknown | 2921 | 2921.0 |
+| researcher_edges_author_year_primary_categories | nonprofit-nonprofit | 7121 | 7121.0 |
+| researcher_edges_author_year_primary_categories | nonprofit-research_institute | 949 | 949.0 |
+| researcher_edges_author_year_primary_categories | nonprofit-unknown | 1735 | 1735.0 |
+| researcher_edges_author_year_primary_categories | research_institute-research_institute | 50148 | 50148.0 |
+| researcher_edges_author_year_primary_categories | research_institute-unknown | 10157 | 10157.0 |
+| researcher_edges_author_year_primary_categories | unknown-unknown | 140083 | 140083.0 |
+| papers_all_observed_affiliation_categories | company-company | 336 | 336.0 |
+| papers_all_observed_affiliation_categories | company-education | 1700 | 1700.0 |
+
 ## Evidence Related to Hypotheses
 
 - H1. Partial firm-centered clustering: inspect `target_firm_label`, community labels, and institution network figures. A supported claim requires visible firm-centered communities plus cross-community links.
@@ -168,6 +217,7 @@ Top bridge institutions:
 
 - Top bridge researchers' career histories and affiliation changes.
 - Whether bridge roles come from researcher mobility, joint appointments, or large multi-institution papers.
+- Compare `outputs/tables/author_year_affiliations.csv` and `outputs/tables/researcher_affiliation_changes.csv` before making claims about mobility.
 - Institution classification rules in `institution_classification_rules.md`, especially ambiguous organizations.
 - Papers with large author lists that were excluded from pairwise researcher edges by the configurable threshold.
 
@@ -177,6 +227,10 @@ Top bridge institutions:
 - Network tables: `outputs/networks/`
 - Gephi files: `outputs/gephi/`
 - Metric tables: `outputs/tables/`
+- Authorship affiliation long table: `outputs/tables/authorship_affiliations_long.csv`
+- Author-year affiliation table: `outputs/tables/author_year_affiliations.csv`
+- Researcher affiliation changes: `outputs/tables/researcher_affiliation_changes.csv`
+- Edge mixing methods: `outputs/tables/edge_type_mixing.csv`
 - Figures: `outputs/figures/`
 - This report: `outputs/report/summary_report.md`
 - GitHub checklist: `outputs/report/github_upload_checklist.md`

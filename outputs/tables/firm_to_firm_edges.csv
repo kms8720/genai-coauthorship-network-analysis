@@ -1,13 +1,19 @@
 source,target,source_name,target_name,source_category,target_category,source_firm,target_firm,weight
+I1290206253,RAW_META,Microsoft (United States),Meta AI,company,company,Microsoft,Meta,1.0
 I1290206253,I1291425158,Microsoft (United States),Google (United States),company,company,Microsoft,Google / Google DeepMind / DeepMind,4.0
 I1290206253,I1311688040,Microsoft (United States),Amazon (United States),company,company,Microsoft,Amazon,1.0
 I1290206253,I4210089985,Microsoft (United States),Amazon (Germany),company,company,Microsoft,Amazon,1.0
 I1291425158,I4210161460,Google (United States),OpenAI (United States),company,company,Google / Google DeepMind / DeepMind,OpenAI,2.0
 I1291425158,I1311688040,Google (United States),Amazon (United States),company,company,Google / Google DeepMind / DeepMind,Amazon,1.0
 I1291425158,I4210127875,Google (United States),Nvidia (United States),company,company,Google / Google DeepMind / DeepMind,NVIDIA,2.0
+I1291425158,RAW_HUGGING_FACE,Google (United States),Hugging Face,company,company,Google / Google DeepMind / DeepMind,Hugging Face,1.0
+I1291425158,RAW_META,Google (United States),Meta AI,company,company,Google / Google DeepMind / DeepMind,Meta,3.0
+I1291425158,RAW_STABILITY_AI,Google (United States),Stability AI,company,company,Google / Google DeepMind / DeepMind,Stability AI,4.0
 I1291425158,I4210087053,Google (United States),Microsoft (Germany),company,company,Google / Google DeepMind / DeepMind,Microsoft,1.0
 I1291425158,I4210108625,Google (United States),Microsoft (United Kingdom),company,company,Google / Google DeepMind / DeepMind,Microsoft,1.0
 I1291425158,I4400600948,Google (United States),Microsoft Research New England (United States),company,company,Google / Google DeepMind / DeepMind,Microsoft,1.0
+I1291425158,RAW_COHERE,Google (United States),Cohere,company,company,Google / Google DeepMind / DeepMind,Cohere,1.0
+I1311688040,RAW_META,Amazon (United States),Meta AI,company,company,Amazon,Meta,1.0
 I1311688040,I4210164937,Amazon (United States),Microsoft Research (United Kingdom),company,company,Amazon,Microsoft,1.0
 I4210089985,I4210164937,Amazon (Germany),Microsoft Research (United Kingdom),company,company,Amazon,Microsoft,2.0
 I4210090411,I4210127875,Google DeepMind (United Kingdom),Nvidia (United States),company,company,Google / Google DeepMind / DeepMind,NVIDIA,2.0
@@ -16,7 +22,11 @@ I4210090411,I4210113369,Google DeepMind (United Kingdom),Microsoft Research Asia
 I4210090411,I4210161460,Google DeepMind (United Kingdom),OpenAI (United States),company,company,Google / Google DeepMind / DeepMind,OpenAI,1.0
 I4210110431,I4210113297,Microsoft (Netherlands),Google (United Kingdom),company,company,Microsoft,Google / Google DeepMind / DeepMind,1.0
 I4210110431,I4210127875,Microsoft (Netherlands),Nvidia (United States),company,company,Microsoft,NVIDIA,1.0
+I4210113297,RAW_META,Google (United Kingdom),Meta AI,company,company,Google / Google DeepMind / DeepMind,Meta,1.0
 I4210113297,I4210113369,Google (United Kingdom),Microsoft Research Asia (China),company,company,Google / Google DeepMind / DeepMind,Microsoft,1.0
 I4210113297,I4210127875,Google (United Kingdom),Nvidia (United States),company,company,Google / Google DeepMind / DeepMind,NVIDIA,1.0
+I4210113297,RAW_COHERE,Google (United Kingdom),Cohere,company,company,Google / Google DeepMind / DeepMind,Cohere,1.0
 I4210113297,I4210161460,Google (United Kingdom),OpenAI (United States),company,company,Google / Google DeepMind / DeepMind,OpenAI,1.0
 I4210113369,I4210127875,Microsoft Research Asia (China),Nvidia (United States),company,company,Microsoft,NVIDIA,1.0
+I4210127875,RAW_HUGGING_FACE,Nvidia (United States),Hugging Face,company,company,NVIDIA,Hugging Face,1.0
+I4210164937,RAW_META,Microsoft Research (United Kingdom),Meta AI,company,company,Microsoft,Meta,1.0

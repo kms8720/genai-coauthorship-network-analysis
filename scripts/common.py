@@ -103,6 +103,129 @@ def target_firm_label(inst_name: Any) -> str:
     return "Other"
 
 
+RAW_TARGET_FIRM_RULES = [
+    {
+        "institution_id": "RAW_OPENAI",
+        "institution_display_name": "OpenAI",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "OpenAI",
+        "patterns": ["openai", "open ai"],
+    },
+    {
+        "institution_id": "RAW_ANTHROPIC",
+        "institution_display_name": "Anthropic",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Anthropic",
+        "patterns": ["anthropic"],
+    },
+    {
+        "institution_id": "RAW_GOOGLE_DEEPMIND",
+        "institution_display_name": "Google DeepMind",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Google / Google DeepMind / DeepMind",
+        "patterns": ["google deepmind", "deepmind", "google research"],
+    },
+    {
+        "institution_id": "RAW_META",
+        "institution_display_name": "Meta AI",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Meta",
+        "patterns": ["meta ai", "facebook ai", "facebook research"],
+    },
+    {
+        "institution_id": "RAW_MICROSOFT",
+        "institution_display_name": "Microsoft Research",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Microsoft",
+        "patterns": ["microsoft research", "microsoft"],
+    },
+    {
+        "institution_id": "RAW_NVIDIA",
+        "institution_display_name": "NVIDIA",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "NVIDIA",
+        "patterns": ["nvidia"],
+    },
+    {
+        "institution_id": "RAW_COHERE",
+        "institution_display_name": "Cohere",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Cohere",
+        "patterns": ["cohere"],
+    },
+    {
+        "institution_id": "RAW_MISTRAL_AI",
+        "institution_display_name": "Mistral AI",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Mistral AI",
+        "patterns": ["mistral ai"],
+    },
+    {
+        "institution_id": "RAW_XAI",
+        "institution_display_name": "xAI",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "xAI",
+        "patterns": ["x.ai", " xai", "xai "],
+    },
+    {
+        "institution_id": "RAW_STABILITY_AI",
+        "institution_display_name": "Stability AI",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Stability AI",
+        "patterns": ["stability ai"],
+    },
+    {
+        "institution_id": "RAW_HUGGING_FACE",
+        "institution_display_name": "Hugging Face",
+        "institution_type": "company",
+        "institution_country_code": "",
+        "simplified_institution_category": "company",
+        "target_firm_label": "Hugging Face",
+        "patterns": ["hugging face"],
+    },
+]
+
+
+def recover_raw_affiliations(raw_affiliation: Any) -> List[Dict[str, str]]:
+    text = f" {str(raw_affiliation or '').lower()} "
+    recovered = []
+    seen = set()
+    for rule in RAW_TARGET_FIRM_RULES:
+        if any(pattern in text for pattern in rule["patterns"]):
+            inst_id = rule["institution_id"]
+            if inst_id in seen:
+                continue
+            seen.add(inst_id)
+            recovered.append(
+                {
+                    key: value
+                    for key, value in rule.items()
+                    if key != "patterns"
+                }
+            )
+    return recovered
+
+
 def csv_or_empty(path: Path) -> pd.DataFrame:
     if path.exists() and path.stat().st_size > 0:
         return pd.read_csv(path)
@@ -117,4 +240,3 @@ def env_note() -> str:
     key = "set" if os.getenv("OPENALEX_API_KEY") else "not set"
     email = "set" if os.getenv("OPENALEX_EMAIL") else "not set"
     return f"OPENALEX_API_KEY={key}; OPENALEX_EMAIL={email}"
-

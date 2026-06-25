@@ -74,6 +74,7 @@ I1313323035,Russian Academy of Sciences,government,RU,government,Other
 I157725225,University of Illinois Urbana-Champaign,education,US,education,Other
 I63190737,"University at Buffalo, State University of New York",education,US,education,Other
 I100005738,Brigham Young University,education,US,education,Other
+RAW_META,Meta AI,company,,company,Meta
 I63966007,Massachusetts Institute of Technology,education,US,education,Other
 I165779595,The University of Melbourne,education,AU,education,Other
 I165932596,National University of Singapore,education,SG,education,Other
@@ -193,6 +194,7 @@ I131579929,Mansfield University,education,US,education,Other
 I1325290502,Economic Policy Institute,nonprofit,US,nonprofit,Other
 I4210100468,University Hospital of Zurich,funder,CH,unknown,Other
 I4210148186,Google (Canada),company,CA,company,Google / Google DeepMind / DeepMind
+RAW_GOOGLE_DEEPMIND,Google DeepMind,company,,company,Google / Google DeepMind / DeepMind
 I84218800,"University of California, Davis",education,US,education,Other
 I197251160,Hebrew University of Jerusalem,education,IL,education,Other
 I124227911,Ben-Gurion University of the Negev,education,IL,education,Other
@@ -259,6 +261,8 @@ I144112489,McGovern Institute for Brain Research,facility,US,research_institute,
 I4210104429,Institute of Cognitive and Brain Sciences,education,US,education,Other
 I4210127055,Athinoula A. Martinos Center for Biomedical Imaging,facility,US,research_institute,Other
 I67031392,Carleton University,education,CA,education,Other
+RAW_ANTHROPIC,Anthropic,company,,company,Anthropic
+RAW_NVIDIA,NVIDIA,company,,company,NVIDIA
 I80687555,Israel Electric (Israel),company,IL,company,Other
 I4210155268,Salesforce (United States),company,US,company,Other
 I162714631,George Mason University,education,US,education,Other
@@ -268,6 +272,7 @@ I4391768151,Toyota Research Institute,facility,,research_institute,Other
 I60053951,Universitat Politècnica de València,education,ES,education,Other
 I4387154989,Hugging Face,company,US,company,Hugging Face
 I110002522,University of Essex,education,GB,education,Other
+RAW_HUGGING_FACE,Hugging Face,company,,company,Hugging Face
 I4210126245,Wikimedia Foundation,nonprofit,US,nonprofit,Other
 I18014758,Simon Fraser University,education,CA,education,Other
 I125680101,Turing Institute,facility,GB,research_institute,Other
@@ -284,6 +289,7 @@ I175234967,The Kids Research Institute Australia,nonprofit,AU,nonprofit,Other
 I177877127,The University of Western Australia,education,AU,education,Other
 I41156924,Victoria University of Wellington,education,NZ,education,Other
 I90023481,National Institute of Information and Communications Technology,facility,JP,research_institute,Other
+RAW_MICROSOFT,Microsoft Research,company,,company,Microsoft
 I4210106879,Ohio University,education,US,education,Other
 I16733864,National Taiwan University,education,TW,education,Other
 I4210096386,Bridge University,education,SS,education,Other
@@ -2066,6 +2072,7 @@ I4210131308,I.R.C.C.S. Oasi Maria SS,facility,IT,research_institute,Other
 I4210155267,Institute for Tourism,facility,HR,research_institute,Other
 I4104125,Universidade Federal de Santa Catarina,education,BR,education,Other
 I79889768,Universidade Federal de Alagoas,education,BR,education,Other
+RAW_XAI,xAI,company,,company,xAI
 I4210086161,Asklepios Klinik Altona,healthcare,DE,healthcare,Other
 I155125381,Galgotias University,education,IN,education,Other
 I33585257,"Anna University, Chennai",education,IN,education,Other
@@ -5671,6 +5678,7 @@ I4210088191,Agricultural Genomics Institute at Shenzhen,facility,CN,research_ins
 I4210138501,Chinese Academy of Agricultural Sciences,government,CN,government,Other
 I4210159344,Viva Biotech (China),company,CN,company,Other
 I4210137115,Data & Society Research Institute,nonprofit,US,nonprofit,Other
+RAW_STABILITY_AI,Stability AI,company,,company,Stability AI
 I4210086977,"Astrophysique, Instrumentation et Modélisation",facility,FR,research_institute,Other
 I4210098776,Lawrie Technology (United States),company,US,company,Other
 I4210091706,Henan Academy of Sciences,facility,CN,research_institute,Other
@@ -6742,6 +6750,7 @@ I4210096499,Lisbon School of Design,education,PT,education,Other
 I53486688,Skyworks Solutions (United States),company,US,company,Other
 I4210120442,AVIC Optronics (China),company,CN,company,Other
 I4401726980,Mininglamp (China),company,CN,company,Other
+RAW_COHERE,Cohere,company,,company,Cohere
 I4210129665,GSL Medical College & General Hospital,education,IN,education,Other
 I4210138307,Central Tobacco Research Institute,facility,IN,research_institute,Other
 I4210111868,Zurich University of Teacher Education,education,CH,education,Other

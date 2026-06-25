@@ -48,15 +48,21 @@ python scripts/06_make_summary_report.py
 - `outputs/figures/`: PNG visualizations.
 - `outputs/report/`: summary report and GitHub upload checklist.
 
-## Sample Mode vs Full Mode
+## Limited Run vs Full Run
 
-`config.yaml` defaults to sample/test mode:
+`config.yaml` defaults to a limited collection run:
 
 - `full_run: false`
 - `max_pages_per_query: 5`
 - `per_page: 100`
 
 For real data collection, set `OPENALEX_API_KEY` first. For a larger collection, set `full_run: true` or increase `max_pages_per_query`.
+
+## Affiliation Framework
+
+The pipeline uses OpenAlex author IDs as researcher node IDs, but it does not rely on one all-period modal institution as the analytical affiliation. It builds an authorship-level affiliation table and an author-year affiliation table. Yearly researcher networks use same-year affiliations, while the full-period network stores latest, dominant, and all observed affiliations from 2022 to 2025.
+
+Conservative raw-affiliation rules recover clearly named target AI firms when OpenAlex has raw strings but no structured institution record. This matters for cases such as Anthropic, where the raw affiliation can be present even when OpenAlex does not attach a structured institution ID.
 
 ## Open GEXF Files in Gephi
 
@@ -74,6 +80,10 @@ Use node color fields such as `simplified_institution_category`, `target_firm_la
 - `data/processed/authorships.csv`
 - `data/processed/institutions.csv`
 - `outputs/tables/network_summary_by_year.csv`
+- `outputs/tables/authorship_affiliations_long.csv`
+- `outputs/tables/author_year_affiliations.csv`
+- `outputs/tables/researcher_affiliation_changes.csv`
+- `outputs/tables/edge_type_mixing.csv`
 - `outputs/tables/top_researchers_betweenness.csv`
 - `outputs/tables/potential_bridge_researchers.csv`
 - `outputs/tables/potential_bridge_institutions.csv`
