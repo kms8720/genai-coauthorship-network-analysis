@@ -3867,7 +3867,7 @@
       <node id="I12607205" label="I12607205">
         <attvalues>
           <attvalue for="0" value="I12607205" />
-          <attvalue for="1" value="HOGENT University of Applied Sciences and Arts" />
+          <attvalue for="1" value="University College Ghent" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -6956,8 +6956,8 @@
         <attvalues>
           <attvalue for="0" value="I1330342723" />
           <attvalue for="1" value="Mayo Clinic" />
-          <attvalue for="2" value="healthcare" />
-          <attvalue for="3" value="healthcare" />
+          <attvalue for="2" value="funder" />
+          <attvalue for="3" value="unknown" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="US" />
           <attvalue for="6" value="10" />
@@ -23068,8 +23068,8 @@
         <attvalues>
           <attvalue for="0" value="I2801952686" />
           <attvalue for="1" value="Erasmus MC" />
-          <attvalue for="2" value="healthcare" />
-          <attvalue for="3" value="healthcare" />
+          <attvalue for="2" value="funder" />
+          <attvalue for="3" value="unknown" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="NL" />
           <attvalue for="6" value="2" />
@@ -39963,7 +39963,7 @@
       <node id="I4210130476" label="I4210130476">
         <attvalues>
           <attvalue for="0" value="I4210130476" />
-          <attvalue for="1" value="Datta Meghe Institute of Higher Education and Research" />
+          <attvalue for="1" value="Datta Meghe Institute of Medical Sciences" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -42604,8 +42604,8 @@
         <attvalues>
           <attvalue for="0" value="I4210140326" />
           <attvalue for="1" value="Centre for Economic Policy Research" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="nonprofit" />
+          <attvalue for="3" value="nonprofit" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="GB" />
           <attvalue for="6" value="1" />

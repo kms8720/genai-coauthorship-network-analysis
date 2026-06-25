@@ -5356,8 +5356,8 @@
         <attvalues>
           <attvalue for="0" value="I1314135232" />
           <attvalue for="1" value="Nationwide Children's Hospital" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="healthcare" />
+          <attvalue for="3" value="healthcare" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="US" />
           <attvalue for="6" value="4" />
@@ -6044,8 +6044,8 @@
         <attvalues>
           <attvalue for="0" value="I1327237609" />
           <attvalue for="1" value="Ministry of Education of the People's Republic of China" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="government" />
+          <attvalue for="3" value="government" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="CN" />
           <attvalue for="6" value="2" />
@@ -11883,7 +11883,7 @@
       <node id="I170486558" label="I170486558">
         <attvalues>
           <attvalue for="0" value="I170486558" />
-          <attvalue for="1" value="Pompeu Fabra University" />
+          <attvalue for="1" value="Universitat Pompeu Fabra" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -23019,7 +23019,7 @@
       <node id="I32021983" label="I32021983">
         <attvalues>
           <attvalue for="0" value="I32021983" />
-          <attvalue for="1" value="Kiel University" />
+          <attvalue for="1" value="Christian-Albrechts-Universität zu Kiel" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -42303,7 +42303,7 @@
           <attvalue for="2" value="facility" />
           <attvalue for="3" value="research_institute" />
           <attvalue for="4" value="Other" />
-          <attvalue for="5" value="" />
+          <attvalue for="5" value="CN" />
           <attvalue for="6" value="2" />
           <attvalue for="7" value="0.003418272218769422" />
           <attvalue for="8" value="12.0" />
@@ -44411,7 +44411,7 @@
       <node id="I5681781" label="I5681781">
         <attvalues>
           <attvalue for="0" value="I5681781" />
-          <attvalue for="1" value="University of Adelaide" />
+          <attvalue for="1" value="The University of Adelaide" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />

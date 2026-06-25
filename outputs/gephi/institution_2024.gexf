@@ -5612,8 +5612,8 @@
         <attvalues>
           <attvalue for="0" value="I1327237609" />
           <attvalue for="1" value="Ministry of Education of the People's Republic of China" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="government" />
+          <attvalue for="3" value="government" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="CN" />
           <attvalue for="6" value="1" />
@@ -19851,7 +19851,7 @@
       <node id="I2972652528" label="I2972652528">
         <attvalues>
           <attvalue for="0" value="I2972652528" />
-          <attvalue for="1" value="FHNW University of Applied Sciences and Arts" />
+          <attvalue for="1" value="FHNW University of Applied Sciences and Arts Northwestern Switzerland" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -25083,7 +25083,7 @@
       <node id="I4210101898" label="I4210101898">
         <attvalues>
           <attvalue for="0" value="I4210101898" />
-          <attvalue for="1" value="GESIS - Leibniz-Institute for the Social Sciences" />
+          <attvalue for="1" value="GESIS - Leibniz Institute for the Social Sciences" />
           <attvalue for="2" value="facility" />
           <attvalue for="3" value="research_institute" />
           <attvalue for="4" value="Other" />

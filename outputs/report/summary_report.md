@@ -138,23 +138,23 @@ Top bridge institutions:
 | company-company | 439 | 606.0 |
 | company-education | 4384 | 5637.0 |
 | company-government | 201 | 235.0 |
-| company-healthcare | 598 | 707.0 |
-| company-nonprofit | 254 | 286.0 |
+| company-healthcare | 597 | 706.0 |
+| company-nonprofit | 256 | 288.0 |
 | company-research_institute | 840 | 947.0 |
-| company-unknown | 177 | 212.0 |
+| company-unknown | 176 | 211.0 |
 | education-education | 27611 | 35871.0 |
 | education-government | 2660 | 3491.0 |
-| education-healthcare | 9403 | 12157.0 |
-| education-nonprofit | 2504 | 2903.0 |
+| education-healthcare | 9394 | 12146.0 |
+| education-nonprofit | 2511 | 2911.0 |
 | education-research_institute | 9985 | 11912.0 |
-| education-unknown | 1743 | 2295.0 |
+| education-unknown | 1745 | 2298.0 |
 | government-government | 132 | 181.0 |
-| government-healthcare | 430 | 473.0 |
+| government-healthcare | 429 | 472.0 |
 | government-nonprofit | 153 | 157.0 |
 | government-research_institute | 992 | 1361.0 |
-| government-unknown | 127 | 184.0 |
-| healthcare-healthcare | 3004 | 3613.0 |
-| healthcare-nonprofit | 633 | 756.0 |
+| government-unknown | 128 | 185.0 |
+| healthcare-healthcare | 2992 | 3601.0 |
+| healthcare-nonprofit | 631 | 754.0 |
 
 ## Evidence Related to Hypotheses
 

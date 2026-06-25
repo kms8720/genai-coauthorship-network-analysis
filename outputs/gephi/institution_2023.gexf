@@ -4428,8 +4428,8 @@
         <attvalues>
           <attvalue for="0" value="I1320796813" />
           <attvalue for="1" value="Mount Sinai Health System" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="healthcare" />
+          <attvalue for="3" value="healthcare" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="US" />
           <attvalue for="6" value="2" />
@@ -9307,7 +9307,7 @@
       <node id="I165951966" label="I165951966">
         <attvalues>
           <attvalue for="0" value="I165951966" />
-          <attvalue for="1" value="The University of Texas Health Science Center at San Antonio" />
+          <attvalue for="1" value="The University of Texas at San Antonio Health Science Center" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -10379,7 +10379,7 @@
       <node id="I175051016" label="I175051016">
         <attvalues>
           <attvalue for="0" value="I175051016" />
-          <attvalue for="1" value="Universidad Pública de Navarra (UPNA)" />
+          <attvalue for="1" value="Universidad Publica de Navarra" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -20219,7 +20219,7 @@
       <node id="I39470171" label="I39470171">
         <attvalues>
           <attvalue for="0" value="I39470171" />
-          <attvalue for="1" value="University of Ontario Institute of Technology" />
+          <attvalue for="1" value="Ontario Tech University" />
           <attvalue for="2" value="education" />
           <attvalue for="3" value="education" />
           <attvalue for="4" value="Other" />
@@ -22444,8 +22444,8 @@
         <attvalues>
           <attvalue for="0" value="I4210097159" />
           <attvalue for="1" value="Assistance Publique – Hôpitaux de Paris" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="healthcare" />
+          <attvalue for="3" value="healthcare" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="FR" />
           <attvalue for="6" value="2" />
@@ -28972,8 +28972,8 @@
         <attvalues>
           <attvalue for="0" value="I4210140326" />
           <attvalue for="1" value="Centre for Economic Policy Research" />
-          <attvalue for="2" value="funder" />
-          <attvalue for="3" value="unknown" />
+          <attvalue for="2" value="nonprofit" />
+          <attvalue for="3" value="nonprofit" />
           <attvalue for="4" value="Other" />
           <attvalue for="5" value="GB" />
           <attvalue for="6" value="2" />

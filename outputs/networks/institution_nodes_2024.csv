@@ -348,7 +348,7 @@ I1325899441,I1325899441,University Health Network,healthcare,healthcare,Other,CA
 I1326498283,I1326498283,Institut national de recherche en sciences et technologies du numérique,government,government,Other,FR,1,0.0016989466530750936,5.0,0.0,0.001945513974911907,38
 I1326872476,I1326872476,Maimonides Medical Center,healthcare,healthcare,Other,US,2,0.0044172612979952435,14.0,2.0019312476751613e-06,0.0016623541234639433,24
 I1327163397,I1327163397,State University of New York,education,education,Other,US,2,0.0054366292898402994,16.0,3.7420714860389556e-05,0.0017708152552826117,24
-I1327237609,I1327237609,Ministry of Education of the People's Republic of China,funder,unknown,Other,CN,1,0.0003397893306150187,1.0,0.0,9.440310735625384e-48,97
+I1327237609,I1327237609,Ministry of Education of the People's Republic of China,government,government,Other,CN,1,0.0003397893306150187,1.0,0.0,9.440310735625384e-48,97
 I1327576362,I1327576362,Feinstein Institute for Medical Research,facility,research_institute,Other,US,1,0.0016989466530750936,5.0,0.0,0.000775334531590098,2
 I132806614,I132806614,University of Dubai,education,education,Other,AE,2,0.0006795786612300374,3.0,0.0,4.967817679396142e-09,65
 I132976966,I132976966,Universität für Weiterbildung Krems,education,education,Other,AT,3,0.0044172612979952435,15.0,1.2358075586610128e-05,9.965599223651796e-05,38
@@ -1238,7 +1238,7 @@ I290598920,I290598920,"California State University, Dominguez Hills",education,e
 I29078338,I29078338,Istituto Nazionale di Geofisica e Vulcanologia,facility,research_institute,Other,IT,1,0.0006795786612300374,2.0,0.0,0.00016538541212854203,65
 I292141241,I292141241,Munich School of Philosophy,education,education,Other,DE,1,0.0006795786612300374,2.0,0.0,0.00085930091143905,2
 I29607241,I29607241,École Normale Supérieure - PSL,other,unknown,Other,FR,2,0.0037376826367652057,13.0,8.469709124779527e-07,0.0006665772093306238,38
-I2972652528,I2972652528,FHNW University of Applied Sciences and Arts,education,education,Other,CH,1,0.0030581039755351687,9.0,0.0,0.0003617642319401014,30
+I2972652528,I2972652528,FHNW University of Applied Sciences and Arts Northwestern Switzerland,education,education,Other,CH,1,0.0030581039755351687,9.0,0.0,0.0003617642319401014,30
 I298625061,I298625061,Swedish University of Agricultural Sciences,education,education,Other,SE,1,0.0006795786612300374,2.0,0.0,5.363524690499956e-43,168
 I29891158,I29891158,University of Sharjah,education,education,Other,AE,1,0.0013591573224600749,4.0,0.0,4.803875080813408e-07,58
 I29894533,I29894533,Charles Darwin University,education,education,Other,AU,2,0.0013591573224600749,4.0,0.0005585388181013699,3.126428024725701e-05,30
@@ -1565,7 +1565,7 @@ I4210101585,I4210101585,Institute of Public Affairs,nonprofit,nonprofit,Other,PL
 I4210101660,I4210101660,Ningbo No. 2 Hospital,healthcare,healthcare,Other,CN,1,0.0006795786612300374,2.0,0.0,8.021480363587978e-05,44
 I4210101743,I4210101743,"Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier",facility,research_institute,Other,FR,1,0.0010193679918450561,3.0,0.0,0.0006012032671815113,38
 I4210101778,I4210101778,Samsung (United States),company,company,Other,US,4,0.006116207951070337,21.0,0.0004932872257034742,0.0065394105632299755,57
-I4210101898,I4210101898,GESIS - Leibniz-Institute for the Social Sciences,facility,research_institute,Other,DE,2,0.0016989466530750936,5.0,3.645824791439187e-05,0.00010734897016737039,36
+I4210101898,I4210101898,GESIS - Leibniz Institute for the Social Sciences,facility,research_institute,Other,DE,2,0.0016989466530750936,5.0,3.645824791439187e-05,0.00010734897016737039,36
 I4210101969,I4210101969,Dalat University,education,education,Other,VN,2,0.0010193679918450561,3.0,4.0038624953503226e-06,0.0005615443241834574,24
 I4210102018,I4210102018,Dell Children's Medical Center of Central Texas,healthcare,healthcare,Other,US,1,0.0,0.0,0.0,7.033579599578219e-56,263
 I4210102044,I4210102044,Mount Sinai Hospital,healthcare,healthcare,Other,US,1,0.0027183146449201497,8.0,0.0,0.002635464102053231,2

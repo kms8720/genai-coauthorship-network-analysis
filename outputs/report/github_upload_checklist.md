@@ -19,7 +19,6 @@
 - `.env`
 - API keys or private credentials
 - Very large raw files such as `data/raw/openalex_works_raw.jsonl`
-- Very large generated graph files such as `outputs/gephi/researcher_full.gexf`
 - Python cache files and virtual environments
 
 ## Suggested Repository
