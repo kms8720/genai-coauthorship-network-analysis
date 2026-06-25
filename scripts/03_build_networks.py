@@ -126,74 +126,6 @@ def author_year_attrs(author_id: str, group: pd.DataFrame, ay_lookup: Dict[Tuple
     }
 
 
-def full_author_attrs(author_id: str, group: pd.DataFrame, author_years: pd.DataFrame, observed: pd.DataFrame) -> Dict[str, Any]:
-    if not author_years.empty:
-        author_years = author_years.sort_values("year")
-    latest = author_years.iloc[-1].to_dict() if not author_years.empty else {}
-
-    if observed.empty:
-        dominant = {}
-        all_names: List[str] = []
-        all_categories: List[str] = ["unknown"]
-        all_firms: List[str] = []
-    else:
-        counts = (
-            observed.groupby("institution_id")
-            .agg(
-                work_count=("work_id", "nunique"),
-                institution_name=("institution_name", "first"),
-                institution_type=("institution_type", "first"),
-                category=("simplified_institution_category", "first"),
-                firm=("target_firm_label", "first"),
-            )
-            .sort_values(["work_count", "institution_name"], ascending=[False, True])
-        )
-        dominant = counts.iloc[0].to_dict()
-        dominant["institution_id"] = counts.index[0]
-        all_names = sorted(set(observed["institution_name"].dropna().astype(str)))
-        all_categories = sorted(set(observed["simplified_institution_category"].dropna().astype(str)))
-        all_firms = sorted(set(observed["target_firm_label"].dropna().astype(str)))
-
-    yearly_categories = [
-        str(v)
-        for v in author_years.get("primary_category_for_display_this_year", pd.Series(dtype=str)).tolist()
-        if str(v) != ""
-    ]
-    yearly_affiliations = [
-        str(v)
-        for v in author_years.get("primary_institution_for_display_this_year", pd.Series(dtype=str)).tolist()
-        if str(v) != ""
-    ]
-    observed_years = semicolon_join(author_years["year"].tolist()) if not author_years.empty else semicolon_join(group["publication_year"])
-
-    latest_category = latest.get("primary_category_for_display_this_year", "unknown") or "unknown"
-    latest_firm = latest.get("primary_target_firm_for_display_this_year", "Other") or "Other"
-    return {
-        "author_id": author_id,
-        "display_name": latest.get("author_name") or first_mode(group["author_display_name"]),
-        "main_institution_name": latest.get("primary_institution_for_display_this_year", ""),
-        "main_institution_id": latest.get("primary_institution_id_for_display_this_year", ""),
-        "main_institution_type": latest.get("primary_institution_type_for_display_this_year", ""),
-        "simplified_institution_category": latest_category,
-        "target_firm_label": latest_firm,
-        "latest_institution_for_display": latest.get("primary_institution_for_display_this_year", ""),
-        "latest_category_for_display": latest_category,
-        "latest_target_firm_for_display": latest_firm,
-        "dominant_institution_for_display": dominant.get("institution_name", ""),
-        "dominant_category_for_display": dominant.get("category", "unknown"),
-        "dominant_target_firm_for_display": dominant.get("firm", "Other"),
-        "all_institution_names_2022_2025": semicolon_join(all_names),
-        "all_categories_2022_2025": semicolon_join(all_categories),
-        "all_target_firms_2022_2025": semicolon_join(all_firms),
-        "affiliation_category_pattern": category_pattern(all_categories),
-        "has_affiliation_change_across_years": len(set(yearly_affiliations)) > 1,
-        "has_category_change_across_years": len({c for c in yearly_categories if c}) > 1,
-        "observed_years": observed_years,
-        "publication_count": int(group["work_id"].nunique()),
-        "year_list": semicolon_join(group["publication_year"]),
-    }
-
-
 def build_full_author_attr_lookup(
     authorships: pd.DataFrame,
     author_year: pd.DataFrame,
@@ -212,20 +144,62 @@ def build_full_author_attr_lookup(
     if author_year.empty:
         latest = pd.DataFrame(columns=["author_id"])
     else:
-        latest = (
+        most_recent = (
             author_year.sort_values(["author_id", "year"])
-            .drop_duplicates("author_id", keep="last")
+            .drop_duplicates("author_id", keep="last")[
+                ["author_id", "year", "primary_category_for_display_this_year"]
+            ]
             .rename(
                 columns={
-                    "author_name": "latest_author_name",
-                    "primary_institution_for_display_this_year": "latest_institution_for_display",
-                    "primary_institution_id_for_display_this_year": "latest_institution_id_for_display",
-                    "primary_institution_type_for_display_this_year": "latest_institution_type_for_display",
-                    "primary_category_for_display_this_year": "latest_category_for_display",
-                    "primary_target_firm_for_display_this_year": "latest_target_firm_for_display",
+                    "year": "most_recent_observed_year",
+                    "primary_category_for_display_this_year": "most_recent_year_category_for_display",
                 }
             )
         )
+        if long_df.empty:
+            latest = pd.DataFrame(columns=["author_id"])
+        else:
+            non_unknown = long_df[
+                (long_df["institution_name"].astype(str) != "")
+                & (long_df["simplified_institution_category"].astype(str) != "unknown")
+            ].copy()
+            if non_unknown.empty:
+                latest = pd.DataFrame(columns=["author_id"])
+            else:
+                if "publication_date" in non_unknown.columns:
+                    non_unknown["publication_date_sort"] = pd.to_datetime(
+                        non_unknown["publication_date"], errors="coerce"
+                    ).fillna(pd.Timestamp("1900-01-01"))
+                else:
+                    non_unknown["publication_date_sort"] = pd.Timestamp("1900-01-01")
+                non_unknown["category_rank"] = non_unknown["simplified_institution_category"].map(
+                    {
+                        "company": 0,
+                        "research_institute": 1,
+                        "education": 2,
+                        "government": 3,
+                        "nonprofit": 4,
+                        "healthcare": 5,
+                    }
+                ).fillna(99)
+                latest = (
+                    non_unknown.sort_values(
+                        ["author_id", "publication_year", "publication_date_sort", "category_rank"],
+                        ascending=[True, True, True, False],
+                    )
+                    .drop_duplicates("author_id", keep="last")
+                    .rename(
+                        columns={
+                            "publication_year": "latest_affiliation_year_for_display",
+                            "institution_name": "latest_institution_for_display",
+                            "institution_id": "latest_institution_id_for_display",
+                            "institution_type": "latest_institution_type_for_display",
+                            "simplified_institution_category": "latest_category_for_display",
+                            "target_firm_label": "latest_target_firm_for_display",
+                        }
+                    )
+                )
+        latest = most_recent.merge(latest, on="author_id", how="left")
 
     if long_df.empty:
         observed_summary = pd.DataFrame(columns=["author_id"])
@@ -295,6 +269,14 @@ def build_full_author_attr_lookup(
         latest_category = row.get("latest_category_for_display") or "unknown"
         latest_firm = row.get("latest_target_firm_for_display") or "Other"
         all_categories = row.get("all_categories_2022_2025") or "unknown"
+        latest_affiliation_year = row.get("latest_affiliation_year_for_display", "")
+        most_recent_observed_year = row.get("most_recent_observed_year", "")
+        most_recent_missing = False
+        if most_recent_observed_year != "":
+            try:
+                most_recent_missing = int(float(most_recent_observed_year)) != int(float(latest_affiliation_year))
+            except Exception:
+                most_recent_missing = True
         attrs[str(row["author_id"])] = {
             "author_id": str(row["author_id"]),
             "display_name": row.get("latest_author_name") or row.get("display_name", ""),
@@ -306,6 +288,9 @@ def build_full_author_attr_lookup(
             "latest_institution_for_display": row.get("latest_institution_for_display", ""),
             "latest_category_for_display": latest_category,
             "latest_target_firm_for_display": latest_firm,
+            "latest_affiliation_year_for_display": latest_affiliation_year,
+            "most_recent_observed_year": most_recent_observed_year,
+            "most_recent_year_affiliation_missing": most_recent_missing,
             "dominant_institution_for_display": row.get("dominant_institution_for_display", ""),
             "dominant_category_for_display": row.get("dominant_category_for_display", "unknown") or "unknown",
             "dominant_target_firm_for_display": row.get("dominant_target_firm_for_display", "Other") or "Other",
