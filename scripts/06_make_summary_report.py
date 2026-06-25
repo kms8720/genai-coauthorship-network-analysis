@@ -51,6 +51,10 @@ def make_report() -> None:
     mobility = read_csv(OUTPUTS / "tables" / "researcher_affiliation_changes.csv")
     edge_mixing = read_csv(OUTPUTS / "tables" / "edge_type_mixing.csv")
     researcher_nodes_full = read_csv(OUTPUTS / "networks" / "researcher_nodes_full.csv")
+    report_viz_summary_path = OUTPUTS / "figures" / "report_ready_visualization_summary.json"
+    report_viz_summary = {}
+    if report_viz_summary_path.exists():
+        report_viz_summary = json.loads(report_viz_summary_path.read_text(encoding="utf-8"))
     cleaning_summary = {}
     summary_path = DATA_PROCESSED / "cleaning_summary.json"
     if summary_path.exists():
@@ -175,6 +179,21 @@ Additional edge mixing methods:
 
 {md_table(edge_mixing[edge_mixing['year'].astype(str) == 'full'] if not edge_mixing.empty else edge_mixing, ['method', 'category_pair', 'edge_count', 'edge_weight'], 30)}
 
+## Report-Ready Filtered Visualizations
+
+The full network figures are too dense for detailed interpretation and should be treated as overview figures only. The following report-ready figures use filtered backbone, ego-network, and community-level views to make group structure and bridge roles easier to inspect.
+
+- `outputs/figures/report_institution_backbone.png`: largest connected component of the institution network, filtered to high weighted-degree institutions, high betweenness institutions, and target AI firms; edges below weight 2 are dropped unless they connect a target AI firm to education or research institute nodes.
+- `outputs/figures/report_company_academic_subnetwork.png`: company to education/research institute collaboration backbone, keeping the strongest company-academic edges and target AI firms.
+- `outputs/figures/report_bridge_institution_ego_network.png`: ego networks around the top bridge institutions by betweenness, keeping strongest neighbors.
+- `outputs/figures/report_bridge_researcher_ego_network.png`: ego networks around the top bridge researchers by betweenness, keeping strongest coauthors.
+- `outputs/figures/report_institution_community_network.png`: Louvain community-level aggregation of the institution network, with community labels based on top institutions.
+- `outputs/figures/researcher_network_full_overview.png` and `outputs/figures/institution_network_full_overview.png`: structural overview figures with labels limited to top betweenness nodes.
+
+Visualization validation summary:
+
+{md_table(pd.DataFrame([{'figure': k, 'nodes': v.get('nodes'), 'edges': v.get('edges'), 'labeled_nodes': len(v.get('labels', []))} for k, v in report_viz_summary.items()]), ['figure', 'nodes', 'edges', 'labeled_nodes'], 20)}
+
 ## Evidence Related to Hypotheses
 
 - H1. Partial firm-centered clustering: inspect `target_firm_label`, community labels, and institution network figures. A supported claim requires visible firm-centered communities plus cross-community links.
@@ -202,6 +221,7 @@ Additional edge mixing methods:
 - Researcher affiliation changes: `outputs/tables/researcher_affiliation_changes.csv`
 - Edge mixing methods: `outputs/tables/edge_type_mixing.csv`
 - Figures: `outputs/figures/`
+- Report-ready visualization summary: `outputs/figures/report_ready_visualization_summary.json`
 - This report: `outputs/report/summary_report.md`
 - GitHub checklist: `outputs/report/github_upload_checklist.md`
 

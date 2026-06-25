@@ -216,6 +216,29 @@ Additional edge mixing methods:
 | papers_all_observed_affiliation_categories | company-company | 336 | 336.0 |
 | papers_all_observed_affiliation_categories | company-education | 1700 | 1700.0 |
 
+## Report-Ready Filtered Visualizations
+
+The full network figures are too dense for detailed interpretation and should be treated as overview figures only. The following report-ready figures use filtered backbone, ego-network, and community-level views to make group structure and bridge roles easier to inspect.
+
+- `outputs/figures/report_institution_backbone.png`: largest connected component of the institution network, filtered to high weighted-degree institutions, high betweenness institutions, and target AI firms; edges below weight 2 are dropped unless they connect a target AI firm to education or research institute nodes.
+- `outputs/figures/report_company_academic_subnetwork.png`: company to education/research institute collaboration backbone, keeping the strongest company-academic edges and target AI firms.
+- `outputs/figures/report_bridge_institution_ego_network.png`: ego networks around the top bridge institutions by betweenness, keeping strongest neighbors.
+- `outputs/figures/report_bridge_researcher_ego_network.png`: ego networks around the top bridge researchers by betweenness, keeping strongest coauthors.
+- `outputs/figures/report_institution_community_network.png`: Louvain community-level aggregation of the institution network, with community labels based on top institutions.
+- `outputs/figures/researcher_network_full_overview.png` and `outputs/figures/institution_network_full_overview.png`: structural overview figures with labels limited to top betweenness nodes.
+
+Visualization validation summary:
+
+| figure | nodes | edges | labeled_nodes |
+| --- | --- | --- | --- |
+| report_institution_backbone | 96 | 300 | 31 |
+| report_company_academic_subnetwork | 81 | 250 | 62 |
+| report_bridge_institution_ego_network | 63 | 91 | 22 |
+| report_bridge_researcher_ego_network | 96 | 96 | 20 |
+| report_institution_community_network | 15 | 80 | 15 |
+| researcher_network_full_overview | 300 | 2722 | 20 |
+| institution_network_full_overview | 300 | 10291 | 20 |
+
 ## Evidence Related to Hypotheses
 
 - H1. Partial firm-centered clustering: inspect `target_firm_label`, community labels, and institution network figures. A supported claim requires visible firm-centered communities plus cross-community links.
@@ -243,6 +266,7 @@ Additional edge mixing methods:
 - Researcher affiliation changes: `outputs/tables/researcher_affiliation_changes.csv`
 - Edge mixing methods: `outputs/tables/edge_type_mixing.csv`
 - Figures: `outputs/figures/`
+- Report-ready visualization summary: `outputs/figures/report_ready_visualization_summary.json`
 - This report: `outputs/report/summary_report.md`
 - GitHub checklist: `outputs/report/github_upload_checklist.md`
 
