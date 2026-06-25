@@ -1,0 +1,8 @@
+pandas>=2.0
+requests>=2.31
+networkx>=3.0
+matplotlib>=3.7
+seaborn>=0.13
+PyYAML>=6.0
+python-louvain>=0.16
+

@@ -1,0 +1,25 @@
+start_year: 2022
+end_year: 2025
+full_run: false
+per_page: 100
+max_pages_per_query: 5
+max_authors_per_paper_for_pairwise_edges: 50
+sleep_seconds: 1.0
+request_timeout_seconds: 30
+retry_attempts: 4
+use_offline_sample_if_api_unavailable: false
+max_initial_api_failures_before_offline_sample: 4
+sample_figure_node_limit: 120
+approx_betweenness_k: 300
+max_exact_betweenness_nodes: 3000
+random_seed: 42
+search_terms:
+  - large language model
+  - LLM
+  - GPT
+  - generative AI
+  - foundation model
+  - diffusion model
+  - text-to-image
+  - RLHF
+  - instruction tuning

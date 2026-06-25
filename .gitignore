@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+data/raw/*.jsonl
+data/raw/*.json
+outputs/gephi/researcher_full.gexf
+*.log

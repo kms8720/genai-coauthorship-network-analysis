@@ -1,0 +1,42 @@
+{
+  "full": {
+    "researcher_nodes": 64934,
+    "researcher_edges": 312015,
+    "institution_nodes": 7416,
+    "institution_edges": 71371,
+    "self_institution_collaboration_count": 3873,
+    "skipped_large_author_papers": 47
+  },
+  "2022": {
+    "researcher_nodes": 16777,
+    "researcher_edges": 66924,
+    "institution_nodes": 3219,
+    "institution_edges": 24360,
+    "self_institution_collaboration_count": 888,
+    "skipped_large_author_papers": 18
+  },
+  "2023": {
+    "researcher_nodes": 17455,
+    "researcher_edges": 85562,
+    "institution_nodes": 2602,
+    "institution_edges": 15015,
+    "self_institution_collaboration_count": 875,
+    "skipped_large_author_papers": 8
+  },
+  "2024": {
+    "researcher_nodes": 21419,
+    "researcher_edges": 96424,
+    "institution_nodes": 2944,
+    "institution_edges": 14960,
+    "self_institution_collaboration_count": 1097,
+    "skipped_large_author_papers": 10
+  },
+  "2025": {
+    "researcher_nodes": 21782,
+    "researcher_edges": 89296,
+    "institution_nodes": 3818,
+    "institution_edges": 24974,
+    "self_institution_collaboration_count": 1013,
+    "skipped_large_author_papers": 11
+  }
+}
