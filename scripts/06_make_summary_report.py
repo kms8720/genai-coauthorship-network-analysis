@@ -50,6 +50,7 @@ def make_report() -> None:
     long_affils = read_csv(OUTPUTS / "tables" / "authorship_affiliations_long.csv")
     mobility = read_csv(OUTPUTS / "tables" / "researcher_affiliation_changes.csv")
     edge_mixing = read_csv(OUTPUTS / "tables" / "edge_type_mixing.csv")
+    researcher_nodes_full = read_csv(OUTPUTS / "networks" / "researcher_nodes_full.csv")
     cleaning_summary = {}
     summary_path = DATA_PROCESSED / "cleaning_summary.json"
     if summary_path.exists():
@@ -63,6 +64,21 @@ def make_report() -> None:
     raw_recovered = cleaning_summary.get("authors_with_raw_affiliation_recovered", "n/a")
     multi_affils = cleaning_summary.get("authors_with_multiple_affiliations", "n/a")
     category_changes = cleaning_summary.get("authors_with_category_changes_across_years", "n/a")
+    total_researcher_nodes = len(researcher_nodes_full)
+    if researcher_nodes_full.empty:
+        blank_latest = "n/a"
+        dominant_nonempty_latest_blank = "n/a"
+        latest_unknown_category = "n/a"
+        recent_missing = "n/a"
+    else:
+        latest_names = researcher_nodes_full.get("latest_institution_for_display", pd.Series(dtype=str)).fillna("").astype(str).str.strip()
+        dominant_names = researcher_nodes_full.get("dominant_institution_for_display", pd.Series(dtype=str)).fillna("").astype(str).str.strip()
+        latest_categories = researcher_nodes_full.get("latest_category_for_display", pd.Series(dtype=str)).fillna("").astype(str)
+        recent_missing_values = researcher_nodes_full.get("most_recent_year_affiliation_missing", pd.Series(dtype=str)).fillna(False)
+        blank_latest = int(latest_names.isin(["", "unknown", "nan"]).sum())
+        dominant_nonempty_latest_blank = int((~dominant_names.isin(["", "unknown", "nan"]) & latest_names.isin(["", "unknown", "nan"])).sum())
+        latest_unknown_category = int((~latest_names.isin(["", "unknown", "nan"]) & (latest_categories == "unknown")).sum())
+        recent_missing = int(recent_missing_values.astype(str).str.lower().isin(["true", "1"]).sum())
 
     report = f"""# Generative AI Research Ecosystem: Competition and Collaboration in Firm-University Coauthorship Networks
 
@@ -93,6 +109,17 @@ Affiliation metadata summary:
 - Authorship-level affiliation rows: {len(long_affils)}
 - Author-year affiliation rows: {len(author_year)}
 - Researcher year-to-year mobility/change rows: {len(mobility)}
+
+Display affiliation diagnostics:
+
+- Total researcher nodes: {total_researcher_nodes}
+- Authors with blank latest institution display: {blank_latest}
+- Authors with non-empty dominant display but blank latest display: {dominant_nonempty_latest_blank}
+- Authors whose latest display affiliation has unknown category: {latest_unknown_category}
+- Authors whose most recent observed year has missing affiliation metadata: {recent_missing}
+- Authors recovered through raw affiliation rules: {raw_recovered}
+
+Display affiliation uses the most recent observed non-empty institution name. If an institution name is available but its category is unknown, the institution name is preserved and only the category remains unknown. This avoids unnecessarily dropping useful affiliation information due to incomplete OpenAlex institution-type metadata.
 
 Raw affiliation recovery is intentionally conservative and focuses on clearly named target AI firms such as OpenAI, Anthropic, Google DeepMind, Microsoft, NVIDIA, Cohere, Mistral AI, xAI, Stability AI, and Hugging Face.
 

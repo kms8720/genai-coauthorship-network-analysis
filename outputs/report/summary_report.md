@@ -28,6 +28,17 @@ Affiliation metadata summary:
 - Author-year affiliation rows: 77433
 - Researcher year-to-year mobility/change rows: 12499
 
+Display affiliation diagnostics:
+
+- Total researcher nodes: 64934
+- Authors with blank latest institution display: 14888
+- Authors with non-empty dominant display but blank latest display: 0
+- Authors whose latest display affiliation has unknown category: 339
+- Authors whose most recent observed year has missing affiliation metadata: 15853
+- Authors recovered through raw affiliation rules: 436
+
+Display affiliation uses the most recent observed non-empty institution name. If an institution name is available but its category is unknown, the institution name is preserved and only the category remains unknown. This avoids unnecessarily dropping useful affiliation information due to incomplete OpenAlex institution-type metadata.
+
 Raw affiliation recovery is intentionally conservative and focuses on clearly named target AI firms such as OpenAI, Anthropic, Google DeepMind, Microsoft, NVIDIA, Cohere, Mistral AI, xAI, Stability AI, and Hugging Face.
 
 Betweenness centrality uses exact calculation when network size is feasible and sampling approximation only when node counts exceed `max_exact_betweenness_nodes` in `config.yaml`. Degree, weighted degree, and eigenvector centrality are calculated directly. Community labels use Louvain when available.
@@ -91,27 +102,27 @@ Top degree researchers:
 | --- | --- | --- | --- | --- |
 | Yu Qiao | A5100748135 | Shanghai Artificial Intelligence Laboratory | 0.0036961175365376 | 438.0 |
 | Ji-Rong Wen | A5025631695 | Renmin University of China | 0.0033727072520906 | 316.0 |
-| Yih Chung Tham | A5085096438 | Singapore Eye Research Institute | 0.0033111052931483 | 293.0 |
-| James Zou | A5005779176 | Chan Zuckerberg Initiative (United States) | 0.0030184959881724 | 271.0 |
+| Yih Chung Tham | A5085096438 | Singapore National Eye Center | 0.0033111052931483 | 293.0 |
+| James Zou | A5005779176 | Stanford University | 0.0030184959881724 | 271.0 |
 | Tianming Liu | A5100647156 | University of Georgia | 0.0029876950087012 | 489.0 |
 | Yang Liu | A5100355692 | Nanyang Technological University | 0.0029568940292301 | 232.0 |
 | Xipeng Qiu | A5044665993 | Fudan University | 0.0028490906010811 | 316.0 |
 | Percy Liang | A5025255782 | Stanford University | 0.0028182896216099 | 278.0 |
-| Tien Yin Wong | A5072258594 | Singapore Eye Research Institute | 0.0027258866831965 | 238.0 |
-| Zhengliang Liu | A5101505879 | University of Georgia | 0.0027258866831965 | 442.0 |
+| Tien Yin Wong | A5072258594 | Tsinghua University | 0.0027258866831965 | 238.0 |
+| Zhengliang Liu | A5101505879 | Mayo Clinic Hospital | 0.0027258866831965 | 442.0 |
 
 Top betweenness researchers:
 
 | display_name | author_id | main_institution_name | betweenness_centrality | weighted_degree |
 | --- | --- | --- | --- | --- |
 | Yu Qiao | A5100748135 | Shanghai Artificial Intelligence Laboratory | 0.0296560742710723 | 438.0 |
-| Ziwei Liu | A5100406050 | Nanyang Institute of Technology | 0.0274707180449615 | 205.0 |
-| Dahua Lin | A5010087030 | Shanghai Artificial Intelligence Laboratory | 0.0195374525129801 | 213.0 |
+| Ziwei Liu | A5100406050 | Nanyang Technological University | 0.0274707180449615 | 205.0 |
+| Dahua Lin | A5010087030 | Chinese University of Hong Kong | 0.0195374525129801 | 213.0 |
 | Caiming Xiong | A5032046813 | Salesforce (United States) | 0.0181571498561954 | 231.0 |
 | Chunyuan Li | A5107893340 | Microsoft (United States) | 0.015758614627284 | 206.0 |
 | Percy Liang | A5025255782 | Stanford University | 0.0151324587446263 | 278.0 |
 | Ji-Rong Wen | A5025631695 | Renmin University of China | 0.0138349263030129 | 316.0 |
-| Noah A. Smith | A5088517824 | Meta AI | 0.011965537373754 | 149.0 |
+| Noah A. Smith | A5088517824 | University of Washington | 0.011965537373754 | 149.0 |
 | Jifeng Dai | A5026944066 | Tsinghua University | 0.0111455075437351 | 197.0 |
 | Lichao Sun | A5015105117 | Lehigh University | 0.0108648322351541 | 154.0 |
 

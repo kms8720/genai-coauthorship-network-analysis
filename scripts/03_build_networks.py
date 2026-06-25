@@ -156,49 +156,31 @@ def build_full_author_attr_lookup(
                 }
             )
         )
-        if long_df.empty:
+        usable_latest = author_year[
+            author_year["primary_institution_for_display_this_year"]
+            .astype(str)
+            .str.strip()
+            .str.lower()
+            .apply(lambda value: value not in {"", "unknown", "nan"})
+        ].copy()
+        if usable_latest.empty:
             latest = pd.DataFrame(columns=["author_id"])
         else:
-            non_unknown = long_df[
-                (long_df["institution_name"].astype(str) != "")
-                & (long_df["simplified_institution_category"].astype(str) != "unknown")
-            ].copy()
-            if non_unknown.empty:
-                latest = pd.DataFrame(columns=["author_id"])
-            else:
-                if "publication_date" in non_unknown.columns:
-                    non_unknown["publication_date_sort"] = pd.to_datetime(
-                        non_unknown["publication_date"], errors="coerce"
-                    ).fillna(pd.Timestamp("1900-01-01"))
-                else:
-                    non_unknown["publication_date_sort"] = pd.Timestamp("1900-01-01")
-                non_unknown["category_rank"] = non_unknown["simplified_institution_category"].map(
-                    {
-                        "company": 0,
-                        "research_institute": 1,
-                        "education": 2,
-                        "government": 3,
-                        "nonprofit": 4,
-                        "healthcare": 5,
+            latest = (
+                usable_latest.sort_values(["author_id", "year"])
+                .drop_duplicates("author_id", keep="last")
+                .rename(
+                    columns={
+                        "author_name": "latest_author_name",
+                        "year": "latest_affiliation_year_for_display",
+                        "primary_institution_for_display_this_year": "latest_institution_for_display",
+                        "primary_institution_id_for_display_this_year": "latest_institution_id_for_display",
+                        "primary_institution_type_for_display_this_year": "latest_institution_type_for_display",
+                        "primary_category_for_display_this_year": "latest_category_for_display",
+                        "primary_target_firm_for_display_this_year": "latest_target_firm_for_display",
                     }
-                ).fillna(99)
-                latest = (
-                    non_unknown.sort_values(
-                        ["author_id", "publication_year", "publication_date_sort", "category_rank"],
-                        ascending=[True, True, True, False],
-                    )
-                    .drop_duplicates("author_id", keep="last")
-                    .rename(
-                        columns={
-                            "publication_year": "latest_affiliation_year_for_display",
-                            "institution_name": "latest_institution_for_display",
-                            "institution_id": "latest_institution_id_for_display",
-                            "institution_type": "latest_institution_type_for_display",
-                            "simplified_institution_category": "latest_category_for_display",
-                            "target_firm_label": "latest_target_firm_for_display",
-                        }
-                    )
                 )
+            )
         latest = most_recent.merge(latest, on="author_id", how="left")
 
     if long_df.empty:
