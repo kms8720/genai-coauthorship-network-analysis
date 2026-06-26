@@ -29,25 +29,24 @@
 
 ## Suggested Commit Message
 
-`Initial generative AI coauthorship network analysis pipeline`
+`Update generative AI coauthorship network analysis outputs`
 
 ## Exact Git Commands
 
 From the project root:
 
 ```bash
-git init
 git add .
-git commit -m "Initial generative AI coauthorship network analysis pipeline"
-git branch -M main
-git remote add origin https://github.com/kms8720/genai-coauthorship-network-analysis.git
-git push -u origin main
+git commit -m "Update generative AI coauthorship network analysis outputs"
+git push origin main
 ```
 
-If GitHub CLI is installed and authenticated:
+If this is a fresh local clone with no remote configured:
 
 ```bash
-gh repo create genai-coauthorship-network-analysis --public --source=. --remote=origin --push
+git remote add origin https://github.com/kms8720/genai-coauthorship-network-analysis.git
+git branch -M main
+git push -u origin main
 ```
 
 Do not push automatically unless the user explicitly requests upload.

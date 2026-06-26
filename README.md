@@ -8,7 +8,7 @@ Is the generative AI research ecosystem organized as a closed firm-centered comp
 
 ## Data Source
 
-This project uses the OpenAlex Works API to collect papers from 2022 to 2025 matching generative AI search terms. OpenAlex currently documents API access as free but requiring a free API key. If no key is available or the API is rate-limited, the collector can write a tiny offline validation sample so the rest of the pipeline can still be tested. See the OpenAlex authentication and pricing documentation: https://developers.openalex.org/
+This project uses the OpenAlex Works API to collect papers from 2022 to 2025 matching generative AI search terms. OpenAlex currently documents API access as free but requiring a free API key. The collector can be configured to write a tiny offline validation sample when the API is unavailable, but the submitted outputs use real OpenAlex records rather than the offline sample. See the OpenAlex authentication and pricing documentation: https://developers.openalex.org/
 
 ## Install Dependencies
 
@@ -36,6 +36,7 @@ python scripts/03_build_networks.py
 python scripts/04_analyze_networks.py
 python scripts/05_visualize_networks.py
 python scripts/06_make_summary_report.py
+python scripts/07_make_report_ready_figures.py
 ```
 
 ## Output Folders
@@ -45,7 +46,7 @@ python scripts/06_make_summary_report.py
 - `outputs/networks/`: node and edge CSV files for researcher and institution networks.
 - `outputs/gephi/`: GEXF files for Gephi.
 - `outputs/tables/`: centrality, mixing, bridge, and network summary tables.
-- `outputs/figures/`: PNG visualizations.
+- `outputs/figures/`: PNG/PDF visualizations, including filtered report-ready network figures.
 - `outputs/report/`: summary report and GitHub upload checklist.
 
 ## Limited Run vs Full Run
@@ -87,6 +88,11 @@ Use node color fields such as `simplified_institution_category`, `target_firm_la
 - `outputs/tables/top_researchers_betweenness.csv`
 - `outputs/tables/potential_bridge_researchers.csv`
 - `outputs/tables/potential_bridge_institutions.csv`
+- `outputs/figures/report_institution_backbone.png`
+- `outputs/figures/report_company_academic_subnetwork.png`
+- `outputs/figures/report_bridge_institution_ego_network.png`
+- `outputs/figures/report_bridge_researcher_ego_network.png`
+- `outputs/figures/report_institution_community_network.png`
 - `outputs/report/summary_report.md`
 - `outputs/report/github_upload_checklist.md`
 
@@ -94,4 +100,4 @@ Note: `outputs/gephi/researcher_full.gexf` is generated locally but excluded fro
 
 ## Reproducibility Notes
 
-The project records raw OpenAlex responses before cleaning. The default run is intentionally small to avoid high API cost and long runtime. If the API key is missing or rate-limited, the scripts may generate a small offline validation dataset; do not use that sample for substantive conclusions. OpenAlex metadata can change over time, so rerunning later may produce slightly different counts.
+The project records raw OpenAlex responses before cleaning. The current submitted outputs are based on 16,000 processed OpenAlex works from a limited real-data collection run. Offline validation samples, if explicitly enabled in `config.yaml`, should not be used for substantive conclusions. OpenAlex metadata can change over time, so rerunning later may produce slightly different counts.

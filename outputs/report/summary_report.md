@@ -283,4 +283,5 @@ python scripts/03_build_networks.py
 python scripts/04_analyze_networks.py
 python scripts/05_visualize_networks.py
 python scripts/06_make_summary_report.py
+python scripts/07_make_report_ready_figures.py
 ```
